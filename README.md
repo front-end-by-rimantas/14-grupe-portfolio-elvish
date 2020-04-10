@@ -17,3 +17,6 @@ Design: [Elvish (elvish) template](http://themesboss.com/elvish/index_6.html)
 ### Mindaugas
 ### Vladimir
 [Mindaugas](https://github.com/minde8888)
+[Vladimir](https://github.com/Vikinges)
+[Aiste](https://github.com/aist01)
+[Ana](https://github.com/gaideliai)
