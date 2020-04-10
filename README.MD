@@ -8,7 +8,7 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 Site published at https://front-end-by-rimantas.github.io/14-grupe-portfolio-elvish/index.html
 
-Design: [Elvish (Elvish) template](http://themesboss.com/elvish/index_6.html)
+Design: [Elvish template](http://themesboss.com/elvish/index_6.html)
 ### Authors
 [Rimantas](https://github.com/belauzas)
 
