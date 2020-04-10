@@ -13,7 +13,7 @@ Design: [Elvish template](http://themesboss.com/elvish/index_6.html)
 [Rimantas](https://github.com/belauzas)
 
 People work in the project:
-### Ana _________| https://github.com/gaideliai 
+### Anna _________| https://github.com/gaideliai 
 ### Aiste________| https://github.com/aist01
 ### Vladimir ____| https://github.com/Vikinges 
 ### Mindaugas   _| https://github.com/minde8888
