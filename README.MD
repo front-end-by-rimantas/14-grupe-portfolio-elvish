@@ -21,5 +21,3 @@ People work in the project:
 ### Mindaugas   _| https://github.com/minde8888
 
 
-Design: Elvish (Elvish) template
-
