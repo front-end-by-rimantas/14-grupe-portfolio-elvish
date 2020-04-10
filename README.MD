@@ -15,10 +15,10 @@ Design: [Elvis (ELvis) template](https://front-end-by-rimantas.github.io/14-grup
 [Rimantas](https://github.com/belauzas)
 
 People work in the project:
-https://github.com/Vikinges
-https://github.com/minde8888
-https://github.com/aist01
-https://github.com/gaideliai
+<br>https://github.com/Vikinges 
+<br>https://github.com/minde8888
+<br>https://github.com/aist01
+<br>https://github.com/gaideliai
 
 
 Design: Elvish (elvish) template
