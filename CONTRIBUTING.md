@@ -14,7 +14,7 @@
 
 * Ensure the PR description clearly describes the problem and solution. Include the relevant issue number if applicable.
 
-* Before submitting, please read the [Contributing to project](https://github.com/front-end-by-rimantas/14-grupe-portfolio-elvish/blob/development/CODE_OF_CONDUCT.md) guide to know more about coding conventions and benchmarks.
+* Before submitting, please read the [Contributing to project](https://github.com/front-end-by-rimantas/14-grupe-portfolio-elvish/blob/master/CODE_OF_CONDUCT.md) guide to know more about coding conventions and benchmarks.
 
 #### **Do you intend to add a new feature or change an existing one?**
 
