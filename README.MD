@@ -11,11 +11,7 @@ Site published at https://front-end-by-rimantas.github.io/14-grupe-portfolio-elv
 Design: [Elvish template](http://themesboss.com/elvish/index_6.html)
 
 Authors:
-<style>
-    { 
-    text-decoration: "### Aiste _______| https://github.com/aist01" underline;
-c   }
-   </style>
+
 ### Aiste _______| https://github.com/aist01
 ### Anna  _______| https://github.com/gaideliai 
 ### Vladimir ____| https://github.com/Vikinges 
