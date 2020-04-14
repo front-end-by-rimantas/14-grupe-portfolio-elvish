@@ -1,6 +1,7 @@
 .bg-main {
- /* color: darkgrey; */
+ background-color: var(--dark-color);
+ color: var(--dark-color-anti);
 }
 .bg-light {
- /* color: lightgray; */
+    background-color: var(--light-color);
 }
