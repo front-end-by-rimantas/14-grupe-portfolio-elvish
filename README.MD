@@ -10,7 +10,7 @@ Site published at https://front-end-by-rimantas.github.io/14-grupe-portfolio-elv
 
 Design: [Elvish template](http://themesboss.com/elvish/index_6.html)
 
-Authors:
+### Authors:
 
 ### Aiste _______| https://github.com/aist01
 ### Anna  _______| https://github.com/gaideliai 
