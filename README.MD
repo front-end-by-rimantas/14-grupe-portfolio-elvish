@@ -9,10 +9,13 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 Site published at https://front-end-by-rimantas.github.io/14-grupe-portfolio-elvish/index.html
 
 Design: [Elvish template](http://themesboss.com/elvish/index_6.html)
-### Authors
-[Rimantas](https://github.com/belauzas)
 
-People work in the project:
+Authors:
+<style>
+    { 
+    text-decoration: "### Aiste _______| https://github.com/aist01" underline;
+c   }
+   </style>
 ### Aiste _______| https://github.com/aist01
 ### Anna  _______| https://github.com/gaideliai 
 ### Vladimir ____| https://github.com/Vikinges 
