@@ -17,13 +17,14 @@ class Achievements {
         for(let i=0; i<data.length; i++){
             const ach = data[i];
             HTML += `
-                <div class="col-3 achievements"
-                <i class="fa fa-${ach.number}"></i>
+                <div class="col-3 achievements">
+                <i class="fa fa-${ach.icon}"></i>
                 <div class="number">${ach.number}</div>
-                <h4>${ach.title}</h4
+                <h4>${ach.title}</h4>
                 </div>`
             console.log(HTML);
         }
+        DOM.innerHTML = HTML;
     }
 }
 export default Achievements;

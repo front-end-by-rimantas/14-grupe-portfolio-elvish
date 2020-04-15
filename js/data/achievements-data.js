@@ -12,12 +12,12 @@ const data = [
         title: 'Completeted Projects'
     },
     {
-        icon: 'mbri-user',
+        icon: 'user',
         number: 2389,
         title: 'No. of Clients'
     },
     {
-        icon: 'mbri-users',
+        icon: 'users',
         number: 653,
         title: 'Team member'
     }
