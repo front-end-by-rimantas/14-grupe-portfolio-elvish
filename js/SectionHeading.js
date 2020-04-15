@@ -5,8 +5,8 @@
          this.element = element;
          this.d = element.dataset;
          this.text = this.d.h2;
-         this.bold = this.d.h2bold;
-
+        this.boldText = this.d.h2Bold;
+console.log(this.boldText);
           this.render();
      }
 
@@ -16,9 +16,16 @@
 
           const classNames = classList.length > 0 ? `class="${classList.join(' ')}"` : '';
 
-          const HTML = `<h2 ${classNames}>${this.text}</h2>`;
+          const HTML = `<h2 ${classNames}><span>${this.boldText}</span>${this.text}</h2>`;
          this.element.insertAdjacentHTML('afterbegin', HTML);
-     }
+     
+       
+        } 
+     
+     
  }
 
   export default SectionHeading; 
+
+ 
+  
