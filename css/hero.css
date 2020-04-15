@@ -1,0 +1,27 @@
+.hero1{
+    align-self: center;
+}
+.hero2{
+    align-self: center;
+    justify-self:center;
+    background: burlywood;
+
+}
+.hero3{
+    display: grid;
+    grid-template-columns: repeat( 5,[col] 1fr);
+    grid-template-rows:repeat( 1, [row] 1fr);
+    grid-column-gap:  15px; ;
+    align-self: start;
+    justify-self:center;
+    /* background: rgb(179, 113, 113); */
+}
+
+.hero5{
+    align-self: center;
+    justify-self:center;
+    background: burlywood;
+    border: 5px solid white;
+    border-radius: 50%;
+    
+}

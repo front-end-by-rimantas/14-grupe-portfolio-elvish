@@ -1,0 +1,31 @@
+.menu{
+    border: 1px solid ;
+    background: #DFFFC4;
+}
+.Elvish{
+grid-column: col 1/col 2;
+}
+.Home{
+    grid-column: col 4/col 5;
+}
+.About{
+    grid-column: col 5/col 6;
+}
+.Service{
+    grid-column: col 6/col 7;
+}
+.Education{
+    grid-column: col 7/col 8;
+}
+.Work{
+    grid-column: col 8/col 9 ;
+}
+.Client{
+    grid-column: col 9/col 10;
+}
+.Blog{
+    grid-column: col 10/col 11;
+}
+.Contact{
+    grid-column: col 11/col 12;
+}

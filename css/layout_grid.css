@@ -1,0 +1,34 @@
+body{
+    display: grid; 
+    /* justify-content: space-evenly; */
+    /* justify-content: start; */
+    /* background: #fff6ff;  */
+
+}
+
+
+.header{
+    display: grid;
+   
+    grid-template-columns: repeat( 12, [col] 1fr);
+    grid-template-rows: repeat(1, [row] 1fr);
+    /* grid-gap: 15px; */ 
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 12, 1fr;
+    grid-template-rows: 12,1fr;
+    background: #AAAA96;
+    align-self: center;
+    justify-self: center;
+}
+
+.about{
+display: grid;
+grid-template-columns: 12,1fr;
+grid-template-rows: 12,1fr;
+align-self: center;
+justify-content: center;
+background: forestgreen;
+}
