@@ -9,17 +9,16 @@
    
     h2 {
        display: inline-block;
-       width: 100%;
        margin-bottom: 30px;
        font-size: 36px;
        line-height: 38px;
        text-align: center;
        position: relative;
+       font-weight: 400;
    }
    
-   h2-bold {
+   .bold {
        display: inline-block;
-       width: 100%;
        margin-bottom: 30px;
        font-size: 36px;
        line-height: 38px;
@@ -29,3 +28,6 @@
    
    }
    
+   .heading {
+       text-align: center;
+   }
