@@ -1,0 +1,25 @@
+"use strict";
+
+const data = [
+    {
+        icon: 'history',
+        number: 654,
+        title: 'Working Hours'
+    },
+    {
+        icon: 'gift',
+        number: 6400,
+        title: 'Completeted Projects'
+    },
+    {
+        icon: 'mbri-user',
+        number: 2389,
+        title: 'No. of Clients'
+    },
+    {
+        icon: 'mbri-users',
+        number: 653,
+        title: 'Team member'
+    }
+]
+export default data;
