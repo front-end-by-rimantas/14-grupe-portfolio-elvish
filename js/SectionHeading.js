@@ -14,17 +14,17 @@
       render() {
 
             if (this.place === "first" ) {
-                let HTML = `<h2><span class="bold">${this.boldText} </span>${this.text}</h2>`;
+                let HTML = `<div class="heading"><h2><span class="bold">${this.boldText} </span>${this.text}</h2></div>`;
                 this.element.insertAdjacentHTML('afterbegin', HTML);
             }
 
             if (this.place === "second" ) {
-                let HTML = `<h2>${this.text} <span class="bold">${this.boldText}</span></h2>`;
+                let HTML = `<div class="heading"><h2>${this.text} <span class="bold">${this.boldText}</span></h2></div>`;
                 this.element.insertAdjacentHTML('afterbegin', HTML);
             }
             
             if (this.place === "all" ) {
-                let HTML = `<h2 class="bold">${this.boldText} </h2>`;
+                let HTML = `<div class="heading"><h2 class="bold">${this.boldText} </h2></div>`;
                 this.element.insertAdjacentHTML('afterbegin', HTML);
             }
         } 
