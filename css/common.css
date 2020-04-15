@@ -1,0 +1,7 @@
+.bg-main {
+ background-color: var(--dark-color);
+ color: var(--dark-color-anti);
+}
+.bg-light {
+    background-color: var(--light-color);
+}
