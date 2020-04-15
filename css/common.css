@@ -1,7 +1,31 @@
 .bg-main {
- background-color: var(--dark-color);
- color: var(--dark-color-anti);
-}
-.bg-light {
-    background-color: var(--light-color);
-}
+    background-color: var(--dark-color);
+    color: var(--dark-color-anti);
+   }
+   .bg-light {
+       background-color: var(--light-color);
+   }
+   
+   
+    h2 {
+       display: inline-block;
+       width: 100%;
+       margin-bottom: 30px;
+       font-size: 36px;
+       line-height: 38px;
+       text-align: center;
+       position: relative;
+   }
+   
+   h2-bold {
+       display: inline-block;
+       width: 100%;
+       margin-bottom: 30px;
+       font-size: 36px;
+       line-height: 38px;
+       text-align: center;
+       position: relative;
+       font-weight: bold;
+   
+   }
+   
