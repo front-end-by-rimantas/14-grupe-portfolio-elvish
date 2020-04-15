@@ -5,7 +5,7 @@
          this.element = element;
          this.d = element.dataset;
          this.text = this.d.h2;
-         this.bold = this.d.h2.bold;
+         this.bold = this.d.h2bold;
 
           this.render();
      }
@@ -22,5 +22,3 @@
  }
 
   export default SectionHeading; 
-
-  
