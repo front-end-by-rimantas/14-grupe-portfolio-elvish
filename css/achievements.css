@@ -1,7 +1,6 @@
 #achievements {
     text-align: center;
     background-color:var(--background-color);
-
     color: var(--dark-color-anti);
     position: relative;
 }
@@ -17,12 +16,8 @@
         left:0;
         z-index: -1;
     }
-        
-    
-    #achievements > * {
+        #achievements > * {
         display: inline-block;
-       
-      
     }
     .achievements{
         padding: 10px 20px;
@@ -47,4 +42,5 @@
         font-size: 14px;
         line-height: 30px;
         color:#b9b9b9;
+        font-family: 'Montserrat', sans-serif;
     }
