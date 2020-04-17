@@ -13,4 +13,4 @@ for ( let i=0; i<allDataH2.length; i++ ) {
 //create four achievements blocks
 new Achievements('#achievements > .row');
 
-new Experience ('#experience .row:nth-child(2)');
+new Experience ('#experience .row:nth-child(3)');

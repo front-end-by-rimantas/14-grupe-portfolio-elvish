@@ -14,18 +14,30 @@ class Experience {
             throw 'ERROR: OMG... go fix Experience!!!';
         }
         let HTML = '';
-        const columns = 2;
-        for(let i=0; i<columns; i++){
-            console.log(i);
-            for(let i=0; i<data.length; i++){
-            const cv = data[i];
-            console.log(cv.position);
-            //HTML +=``;
+        
+        for(let i=0; i<data.length; i++){
+        const cv = data[i];
+        
+            if (i%2===0) {
+                HTML +=`<div class="experience-block col-5 m-r-2">
+                            <div class="cv">
+                                <div class="date">${cv.date}</div>
+                                <div class="position">${cv.position}</div>
+                                <p>${cv.description}</p>
+                            </div>
+                        </div>`;
+            } else {
+                HTML +=`<div class="experience-block col-5">
+                            <div class="cv">
+                                <div class="date">${cv.date}</div>
+                                <div class="position">${cv.position}</div>
+                                <p>${cv.description}</p>
+                            </div>
+                        </div>`;
             }
-        }
-        //DOM.innerHTML = HTML;
+        }        
+        DOM.innerHTML = HTML;
     }
-
 }
 
 export default Experience;

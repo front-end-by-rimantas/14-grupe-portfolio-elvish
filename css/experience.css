@@ -1,8 +1,11 @@
+#experience.container > .row > * + * {
+    margin-left: 0;
+}
 #experience .experience-block {
     display: inline-block;
     padding: 20px 0 10px 30px;
     border-left: 1px solid #ccc;
-}    
+}
     #experience .experience-block > .cv {
         display: inline-block;
         width: 100%;
@@ -12,7 +15,7 @@
         border-radius: 10px;
         position: relative;
     }
-        #experience .cv::after {        
+        #experience .cv::after {
             display: inline-block;
             content: '';
             width: 15px;
@@ -24,14 +27,14 @@
             top: 20px;
             left: -42px;
         } 
-        #experience .experience-block .cv .date {
+        #experience .cv > .date {
             display: inline-block;
             width: 100%;
             text-align: left;
             font-size: 20px;
             line-height: 20px;
         }
-        #experience .experience-block .cv .position {
+        #experience .cv > .position {
             display: inline-block;
             width: 100%;
             text-align: left;
@@ -39,10 +42,9 @@
             line-height: 36px;
             margin-bottom: 10px;
         }
-        #experience .experience-block .cv p {
+        #experience .cv > p {
             display: inline-block;
             width: 100%;
             text-align: left;
-            margin-bottom: 0;
-            
+            margin-bottom: 0;            
         }
