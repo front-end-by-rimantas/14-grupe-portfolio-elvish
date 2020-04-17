@@ -1,5 +1,5 @@
 :root {
-    --gap: 20px;
+    --gap: 30px;
     --sg: calc(var(--s1) + var(--gap));     /* stulpelis + gap */
     --s1: calc((100% - 11 * var(--gap)) / 12);
     --s2: calc(var(--s1) + var(--sg));
@@ -14,7 +14,7 @@
     --s11: calc(var(--s10) + var(--sg));
     --s12: calc(var(--s11) + var(--sg));
 
-    --m1: calc(var(--gap) + var(--sg));
+    --m1: calc(var(--sg));
     --m2: calc(var(--m1) + var(--sg));
     --m3: calc(var(--m2) + var(--sg));
     --m4: calc(var(--m3) + var(--sg));
@@ -35,8 +35,8 @@
 }
     .container > .row {
         display: inline-block;
-        width: 1300px;
-        margin: 0 calc(50% - 650px);
+        width: 1200px;
+        margin: 0 calc(50% - 600px);
     }
         .container > .row > * {
             display: inline-block;
@@ -72,18 +72,18 @@
         .container > .row > .m-l-11 { margin-left: var(--m11); }
         .container > .row > .m-l-12 { margin-left: var(--m12); }
 
-        .container > .row > .m-r-1 { margin-right: calc(var(--m1) - var(--gap)); }
-        .container > .row > .m-r-2 { margin-right: calc(var(--m2) - var(--gap)); }
-        .container > .row > .m-r-3 { margin-right: calc(var(--m3) - var(--gap)); }
-        .container > .row > .m-r-4 { margin-right: calc(var(--m4) - var(--gap)); }
-        .container > .row > .m-r-5 { margin-right: calc(var(--m5) - var(--gap)); }
-        .container > .row > .m-r-6 { margin-right: calc(var(--m6) - var(--gap)); }
-        .container > .row > .m-r-7 { margin-right: calc(var(--m7) - var(--gap)); }
-        .container > .row > .m-r-8 { margin-right: calc(var(--m8) - var(--gap)); }
-        .container > .row > .m-r-9 { margin-right: calc(var(--m9) - var(--gap)); }
-        .container > .row > .m-r-10 { margin-right: calc(var(--m10) - var(--gap)); }
-        .container > .row > .m-r-11 { margin-right: calc(var(--m11) - var(--gap)); }
-        .container > .row > .m-r-12 { margin-right: calc(var(--m12) - var(--gap)); }
+        .container > .row > .m-r-1 { margin-right: var(--m1); }
+        .container > .row > .m-r-2 { margin-right: var(--m2); }
+        .container > .row > .m-r-3 { margin-right: var(--m3); }
+        .container > .row > .m-r-4 { margin-right: var(--m4); }
+        .container > .row > .m-r-5 { margin-right: var(--m5); }
+        .container > .row > .m-r-6 { margin-right: var(--m6); }
+        .container > .row > .m-r-7 { margin-right: var(--m7); }
+        .container > .row > .m-r-8 { margin-right: var(--m8); }
+        .container > .row > .m-r-9 { margin-right: var(--m9); }
+        .container > .row > .m-r-10 { margin-right: var(--m10); }
+        .container > .row > .m-r-11 { margin-right: var(--m11); }
+        .container > .row > .m-r-12 { margin-right: var(--m12); }
 
 @media ( max-width: 1300px ) {
     .container > .row {
