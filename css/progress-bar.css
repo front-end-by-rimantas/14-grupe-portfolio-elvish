@@ -1,0 +1,104 @@
+.myProgress1 {
+  /* font-family: "Helvetica Neue", "Arial", sans-serif; */
+  /* font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; */
+  /* font-style:inherit;
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: 1px; */
+  font-weight: bold;
+  
+}
+.myProgress2 {
+  font-weight: bold;
+  
+  /* display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(12,1fr); */
+  /* background-color: grey; */
+  /* margin-top: 20px; */
+}
+/* ---------------Col 1--------------------- */
+.numberbar1{
+  float: right;
+}
+.namebar1{
+  float: left;
+}
+.numberbar2{
+    margin-top: 30px;
+    float: right;
+  }
+  .namebar2{
+    margin-top: 30px;
+    float: left;
+  }
+  .numberbar3{
+    margin-top: 30px;
+    float: right;
+  }
+  .namebar3{
+    margin-top: 30px;
+    float: left;
+  }
+  .myBar1 {
+    width: var(--ProgresBarProc1);
+    height: 5px;
+    background-color: #036CDB;
+    margin-top: 25px;
+  }
+  .myBar2 {
+    margin-top: 55px;
+    width: var(--ProgresBarProc2);
+    height: 5px;
+    background-color: #036CDB;
+  }
+  .myBar3 {
+    margin-top: 55px;
+    width: var(--ProgresBarProc3);
+    height: 5px;
+    background-color: #036CDB;
+  }
+ /* ---------------Col 2--------------------- */
+  .numberbar4{
+   float: right;
+  }
+  .namebar4{
+    float: left;
+  }
+  .numberbar5{
+    margin-top: 30px;
+    float: right;
+  }
+  .namebar5{
+    margin-top: 30px;
+    float: left;
+  }
+  .numberbar6{
+    margin-top: 30px;
+    float: right;
+  }
+  .namebar6{
+    margin-top: 30px;
+    float: left;
+  }
+  .myBar4 {
+    margin-top: 25px;
+    width: var(--ProgresBarProc4);
+    height: 5px;
+    background-color: #036CDB;
+  }
+  .myBar5 {
+      margin-top: 55px;
+    width: var(--ProgresBarProc5);
+    height: 5px;
+    background-color: #036CDB;
+  }
+  .myBar6 {
+      margin-top: 55px;
+    width: var(--ProgresBarProc6);
+    height: 5px;
+    background-color: #036CDB;
+  }
+  @keyframes Moov{
+
+  }
