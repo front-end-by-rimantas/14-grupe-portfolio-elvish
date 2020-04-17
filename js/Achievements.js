@@ -20,7 +20,7 @@ class Achievements {
                 <div class="col-3 achievements">
                 <i class="fa fa-${ach.icon}"></i>
                 <div class="number">${ach.number}</div>
-                <h4>${ach.title}</h4>
+                <p>${ach.title}</p>
                 </div>`
             console.log(HTML);
         }

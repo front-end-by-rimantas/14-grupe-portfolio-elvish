@@ -21,5 +21,6 @@ const data = [
         number: 653,
         title: 'Team member'
     }
+    
 ]
 export default data;

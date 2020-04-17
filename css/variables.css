@@ -1,6 +1,7 @@
 :root{
     --dark-color: #373A3E;
     --light-color: #F8F9FA;
+    --background-color:rgba(0, 0, 0, 0.7);
 
     --dark-color-anti: #fff;
 }
