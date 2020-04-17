@@ -35,8 +35,8 @@
 }
     .container > .row {
         display: inline-block;
-        width: 1200px;
-        margin: 0 calc(50% - 600px);
+        width: 1300px;
+        margin: 0 calc(50% - 650px);
     }
         .container > .row > * {
             display: inline-block;
