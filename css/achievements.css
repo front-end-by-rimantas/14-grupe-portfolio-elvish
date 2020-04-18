@@ -4,7 +4,7 @@
     color: var(--dark-color-anti);
     position: relative;
 }
-    #achievements > img{
+     img{
         display: inline-block;
         width: 100%;
         height: 100%;

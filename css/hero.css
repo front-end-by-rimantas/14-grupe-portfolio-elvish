@@ -1,0 +1,44 @@
+.hero{
+    height:100vh;
+    text-align: center;
+    background-color:var(--background-color);
+    color: var(--dark-color-anti);
+    position: relative;
+}
+.hero > .row >.hight{
+    display: inline-block;
+   /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+ }
+    .hero > * {
+        display: inline-block;
+    }
+        .hero .row h4 {
+            line-height: 40px;
+            font-size: 20px;
+            font-weight: none;
+        }
+        .hero h1{
+            font-size: 72px;
+            font-weight: 400;
+            line-height: 80px;
+            text-transform: capitalize;
+        }
+    .socials {
+    display: inline-block;
+    width: 100%;
+   
+    
+  }
+    .socials > a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      font-size: 13px;
+      line-height: 60px;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 30px;
+  }
