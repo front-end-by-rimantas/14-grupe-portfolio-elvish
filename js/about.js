@@ -41,5 +41,28 @@ class ProgressBarX3 {
 export default ProgressBarX3;
 import aboutData from './data/AboutMe-data.js';
 // --------------Make progress bar 3x lin END------------
-console.log(aboutData);
+console.log(aboutData[0].titleShort);
 // --------------Make 3 paragraph H1 H2 P-----------
+class AboutAs{
+    constructor(AboutMe,firstRar,logo,HelloH3,Ui_UX,SecondPar,querySelector,){
+      this.titleabout=AboutMe;
+      this.parferst=firstRar; 
+      this.link=logo;
+      this.HelloH=HelloH3;
+      this.Ui_UX=Ui_UX;
+      this.SecondPar=SecondPar;
+      this.querySelector=querySelector;
+      this.init();
+    }
+    init(){
+        const DOM = document.querySelector(this.querySelector);
+        if(!DOM){
+            throw 'ERROR: not finde selektor Fix pleas';
+        }  
+        let HTML='';
+        HTML += `<div class"">
+                <div>`
+        DOM.innerHTML=HTML;
+}
+}
+

@@ -1,4 +1,17 @@
-.myProgress{
+.textP{
     display: grid;
-    background: #A982FF;
+    height: 100px;
+    align-content: center;
+}
+.aboutPlomg{
+  
+    width: 700px;
+    height: 70px;
+    margin-top: 50px;
+    margin: 0 calc(50% - 350px);
+    text-align: center;
+    color: #737B83;
+   
+    
+    
 }
