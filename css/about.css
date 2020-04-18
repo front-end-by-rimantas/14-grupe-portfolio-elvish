@@ -11,7 +11,32 @@
     margin: 0 calc(50% - 350px);
     text-align: center;
     color: #737B83;
-   
-    
-    
+}
+.aboutMeh2{
+    display: grid;
+    justify-content: center;
+    color: #737B83;
+}
+.aboutH2{
+    display: grid;
+    justify-content: center;
+    font-size: 2rem3
+}
+.aboutimg{
+        display: grid;
+        margin:auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 200px;
+        margin-bottom: 40px;
+      
+      }
+.aboutfirstP{
+    width: 500px;
+    height: 70px;
+    margin-top: 50px;
+    margin: 0 calc(50% - 250px);
+    text-align: center;
+    color: #737B83; 
 }
