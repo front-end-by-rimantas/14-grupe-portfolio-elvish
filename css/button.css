@@ -1,0 +1,52 @@
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 30px;
+    cursor: pointer;
+}
+    .btn.btn-rt{
+        padding:2px 18px;
+        border: 2px solid #fff;
+        border-radius: 23px;
+    }
+    .btn.btn-st{
+        padding:3px 18px;
+        border: 2px solid #fff;
+        border-radius: 3px;
+    }
+    .btn.btn-rt:hover{
+        background-color:#fff;
+        color: rgb(0, 0, 0);
+        transition: all 0.5s;
+    }
+    .btn.btn-st:hover {
+        background-color:#fff;
+        color: rgb(0, 0, 0);
+        transition: all 0.5s;
+    }
+    .btn.btn-rb{
+        padding:4px 25px;
+        color: #fff;
+        background-color:rgb(0, 0, 0) ;
+        border-radius: 23px;
+        border: 2px solid rgb(0, 0, 0);
+    }
+    .btn.btn-sb{
+        padding:4px 25px;
+        color: #fff;
+        background-color:rgb(0, 0, 0) ;
+        border-radius: 3px;
+        border: 2px solid rgb(0, 0, 0);
+    }
+    .btn.btn-rb:hover{
+        background-color:#fff;
+        color: rgb(0, 0, 0);
+        transition: all 0.5s;
+        border: 2px solid rgb(0, 0, 0);
+    } 
+    .btn.btn-sb:hover {
+        background-color:#fff;
+        color: rgb(0, 0, 0);
+        transition: all 0.5s;
+        border: 2px solid rgb(0, 0, 0);
+    }
