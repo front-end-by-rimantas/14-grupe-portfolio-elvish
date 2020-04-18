@@ -43,20 +43,23 @@
   .myBar1 {
     width: var(--ProgresBarProc1);
     height: 5px;
-    background-color: #036CDB;
+    background-color: black;
+    border: 1px solid blue;
     margin-top: 25px;
   }
   .myBar2 {
     margin-top: 55px;
     width: var(--ProgresBarProc2);
     height: 5px;
-    background-color: #036CDB;
+    background-color: black;
+    border: 1px solid blue;
   }
   .myBar3 {
     margin-top: 55px;
     width: var(--ProgresBarProc3);
     height: 5px;
-    background-color: #036CDB;
+    background-color: black;
+    border: 1px solid blue;
   }
  /* ---------------Col 2--------------------- */
   .numberbar4{
@@ -85,19 +88,22 @@
     margin-top: 25px;
     width: var(--ProgresBarProc4);
     height: 5px;
-    background-color: #036CDB;
+    background-color: black;
+    border: 1px solid blue;
   }
   .myBar5 {
       margin-top: 55px;
     width: var(--ProgresBarProc5);
     height: 5px;
-    background-color: #036CDB;
+    background-color: black;
+    border: 1px solid blue;
   }
   .myBar6 {
       margin-top: 55px;
     width: var(--ProgresBarProc6);
     height: 5px;
-    background-color: #036CDB;
+    background-color: black;
+    border: 1px solid blue;
   }
   @keyframes Moov{
 
