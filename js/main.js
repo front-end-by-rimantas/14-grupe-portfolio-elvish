@@ -1,8 +1,8 @@
 "use strict";
 
-import SectionHeading from './objects/SectionHeading.js';
-import Achievements from './objects/Achievements.js';
-import Experience from './objects/Experience.js';
+import SectionHeading from './components/SectionHeading.js';
+import Achievements from './components/Achievements.js';
+import Experience from './components/Experience.js';
  
 // find all attr with 'data-h2' to create H2 elements
 const allDataH2 = document.querySelectorAll('[data-h2],[data-h2-bold],[data-place]');
