@@ -1,5 +1,5 @@
 "use strict";
-import data from './data/achievements-data.js';
+import data from '../data/achievements-data.js';
 
 class Achievements {
     constructor(target){
@@ -22,7 +22,7 @@ class Achievements {
                 <div class="number">${ach.number}</div>
                 <p>${ach.title}</p>
                 </div>`
-            console.log(HTML);
+            //console.log(HTML);
         }
         DOM.innerHTML = HTML;
     }
