@@ -25,13 +25,13 @@ class ProgressBarX3 {
         var num2=this.progess3;
         HTML +=`  <p class="namebar${x}">${name}</p>
         <p class="numberbar${x}">${num}%</p>
-    <div class="myBar${x++}"></div>
+    <div class="fon"><div class="myBar${x++}"></div></div>
         <p class="namebar${x}">${name1}</p>
         <p class="numberbar${x}">${num1}%</p>
-    <div class="myBar${x++}"></div>
+        <div class="fon"><div class="myBar${x++}"></div></div>
         <p class="namebar${x}">${name2}</p>
         <p class="numberbar${x}">${num2}%</p>
-    <div class="myBar${x}"></div> `;
+        <div class="fon"><div class="myBar${x}"></div></div> `;
         par.innerHTML = HTML;
         console.log(par);
        console.log(this.step);   

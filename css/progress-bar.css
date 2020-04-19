@@ -84,6 +84,12 @@
     margin-top: 30px;
     float: left;
   }
+  .fon{
+    margin-top: 25px;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(212, 212, 212);
+  }
   .myBar4 {
     margin-top: 25px;
     width: var(--ProgresBarProc4);
