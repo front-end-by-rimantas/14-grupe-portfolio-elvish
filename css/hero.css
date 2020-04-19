@@ -96,151 +96,151 @@
 
     @keyframes animationFrames{
         0% {
-          transform:  translate(-27px,-54px)  ;
+          transform:  translate(-0px,-54px)  ;
         }
         15% {
-          transform:  translate(-27px,-25px)  ;
+          transform:  translate(0px,-25px)  ;
         }
         30% {
-          transform:  translate(-27px,0px)  ;
+          transform:  translate(0px,0px)  ;
         }
         45% {
-          transform:  translate(-27px,-29px)  ;
+          transform:  translate(0px,-29px)  ;
         }
         50% {
-          transform:  translate(-27px,-27px)  ;
+          transform:  translate(0px,-27px)  ;
         }
         60% {
-          transform:  translate(-27px,0px)  ;
+          transform:  translate(0px,0px)  ;
         }
         74% {
-          transform:  translate(-26px,-15px)  ;
+          transform:  translate(0px,-15px)  ;
         }
         75% {
-          transform:  translate(-26px,-5px)  ;
+          transform:  translate(0px,-5px)  ;
         }
         100% {
-          transform:  translate(-26px,6px)  ;
+          transform:  translate(0px,6px)  ;
         }
       }
       
       @-moz-keyframes animationFrames{
         0% {
-          -moz-transform:  translate(-27px,-54px)  ;
+          -moz-transform:  translate(0px,-54px)  ;
         }
         15% {
-          -moz-transform:  translate(-27px,-25px)  ;
+          -moz-transform:  translate(0px,-25px)  ;
         }
         30% {
-          -moz-transform:  translate(-27px,0px)  ;
+          -moz-transform:  translate(0px,0px)  ;
         }
         45% {
-          -moz-transform:  translate(-27px,-29px)  ;
+          -moz-transform:  translate(0px,-29px)  ;
         }
         50% {
-          -moz-transform:  translate(-27px,-27px)  ;
+          -moz-transform:  translate(0px,-27px)  ;
         }
         60% {
-          -moz-transform:  translate(-27px,0px)  ;
+          -moz-transform:  translate(0px,0px)  ;
         }
         74% {
-          -moz-transform:  translate(-26px,-15px)  ;
+          -moz-transform:  translate(0px,-15px)  ;
         }
         75% {
-          -moz-transform:  translate(-26px,-5px)  ;
+          -moz-transform:  translate(0px,-5px)  ;
         }
         100% {
-          -moz-transform:  translate(-26px,6px)  ;
+          -moz-transform:  translate(0px,6px)  ;
         }
       }
       
       @-webkit-keyframes animationFrames {
         0% {
-          -webkit-transform:  translate(-27px,-54px)  ;
+          -webkit-transform:  translate(0px,-54px)  ;
         }
         15% {
-          -webkit-transform:  translate(-27px,-25px)  ;
+          -webkit-transform:  translate(0px,-25px)  ;
         }
         30% {
-          -webkit-transform:  translate(-27px,0px)  ;
+          -webkit-transform:  translate(0px,0px)  ;
         }
         45% {
-          -webkit-transform:  translate(-27px,-29px)  ;
+          -webkit-transform:  translate(0px,-29px)  ;
         }
         50% {
-          -webkit-transform:  translate(-27px,-27px)  ;
+          -webkit-transform:  translate(0px,-27px)  ;
         }
         60% {
-          -webkit-transform:  translate(-27px,0px)  ;
+          -webkit-transform:  translate(0px,0px)  ;
         }
         74% {
-          -webkit-transform:  translate(-26px,-15px)  ;
+          -webkit-transform:  translate(0px,-15px)  ;
         }
         75% {
-          -webkit-transform:  translate(-26px,-5px)  ;
+          -webkit-transform:  translate(0px,-5px)  ;
         }
         100% {
-          -webkit-transform:  translate(-26px,6px)  ;
+          -webkit-transform:  translate(0px,6px)  ;
         }
       }
       
       @-o-keyframes animationFrames {
         0% {
-          -o-transform:  translate(-27px,-54px)  ;
+          -o-transform:  translate(0px,-54px)  ;
         }
         15% {
-          -o-transform:  translate(-27px,-25px)  ;
+          -o-transform:  translate(0px,-25px)  ;
         }
         30% {
-          -o-transform:  translate(-27px,0px)  ;
+          -o-transform:  translate(0px,0px)  ;
         }
         45% {
-          -o-transform:  translate(-27px,-29px)  ;
+          -o-transform:  translate(0px,-29px)  ;
         }
         50% {
-          -o-transform:  translate(-27px,-27px)  ;
+          -o-transform:  translate(0px,-27px)  ;
         }
         60% {
-          -o-transform:  translate(-27px,0px)  ;
+          -o-transform:  translate(0px,0px)  ;
         }
         74% {
-          -o-transform:  translate(-26px,-15px)  ;
+          -o-transform:  translate(0px,-15px)  ;
         }
         75% {
-          -o-transform:  translate(-26px,-5px)  ;
+          -o-transform:  translate(0px,-5px)  ;
         }
         100% {
-          -o-transform:  translate(-26px,6px)  ;
+          -o-transform:  translate(0px,6px)  ;
         }
       }
       
       @-ms-keyframes animationFrames {
         0% {
-          -ms-transform:  translate(-27px,-54px)  ;
+          -ms-transform:  translate(0px,-54px)  ;
         }
         15% {
-          -ms-transform:  translate(-27px,-25px)  ;
+          -ms-transform:  translate(0px,-25px)  ;
         }
         30% {
-          -ms-transform:  translate(-27px,0px)  ;
+          -ms-transform:  translate(0px,0px)  ;
         }
         45% {
-          -ms-transform:  translate(-27px,-29px)  ;
+          -ms-transform:  translate(0px,-29px)  ;
         }
         50% {
-          -ms-transform:  translate(-27px,-27px)  ;
+          -ms-transform:  translate(0px,-27px)  ;
         }
         60% {
-          -ms-transform:  translate(-27px,0px)  ;
+          -ms-transform:  translate(0px,0px)  ;
         }
         74% {
-          -ms-transform:  translate(-26px,-15px)  ;
+          -ms-transform:  translate(-0px,-15px)  ;
         }
         75% {
-          -ms-transform:  translate(-26px,-5px)  ;
+          -ms-transform:  translate(-0px,-5px)  ;
         }
         100% {
-          -ms-transform:  translate(-26px,6px)  ;
+          -ms-transform:  translate(-0px,6px)  ;
         }
       }
     .wave {
