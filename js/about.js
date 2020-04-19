@@ -38,31 +38,74 @@ class ProgressBarX3 {
         return this.dom=par;
     }
 }
-export default ProgressBarX3;
+
+
 import aboutData from './data/AboutMe-data.js';
 // --------------Make progress bar 3x lin END------------
 console.log(aboutData[0].titleShort);
+
 // --------------Make 3 paragraph H1 H2 P-----------
-class AboutAs{
-    constructor(AboutMe,firstRar,logo,HelloH3,Ui_UX,SecondPar,querySelector,){
-      this.titleabout=AboutMe;
-      this.parferst=firstRar; 
-      this.link=logo;
-      this.HelloH=HelloH3;
-      this.Ui_UX=Ui_UX;
-      this.SecondPar=SecondPar;
+class AboutAs {
+    constructor(querySelector){
       this.querySelector=querySelector;
       this.init();
     }
     init(){
+
+    if (this.querySelector == '.titleShort'){
         const DOM = document.querySelector(this.querySelector);
+        
         if(!DOM){
             throw 'ERROR: not finde selektor Fix pleas';
         }  
         let HTML='';
-        HTML += `<div class"">
-                <div>`
+        HTML += `<p class="aboutfirstP">${aboutData[0].titleShort}</p>`
         DOM.innerHTML=HTML;
+    }
+    if (this.querySelector == '.aboutH2_1'){
+        const DOM = document.querySelector(this.querySelector);
+        
+        if(!DOM){
+            throw 'ERROR: not finde selektor Fix pleas';
+        }  
+        let HTML='';
+        HTML += `<p class="aboutH2">${aboutData[0].hello}</p>`
+        DOM.innerHTML=HTML;
+    }
+    if (this.querySelector == '.aboutimg_1'){
+        const DOM = document.querySelector(this.querySelector);
+        
+        if(!DOM){
+            throw 'ERROR: not finde selektor Fix pleas';
+        }  
+        let HTML='';
+        HTML += ` <img class="aboutimg" src=${aboutData[0].icon} alt="" srcset="">`
+        DOM.innerHTML=HTML;
+    }
+    if (this.querySelector == '.aboutMeh2_1'){
+        const DOM = document.querySelector(this.querySelector);
+        
+        if(!DOM){
+            throw 'ERROR: not finde selektor Fix pleas';
+        }  
+        let HTML='';
+        HTML += ` <h3 class="aboutMeh2" >${aboutData[0].name1}</h3>`
+        DOM.innerHTML=HTML;
+    }
+    if (this.querySelector == '.aboutPlomg_1'){
+        const DOM = document.querySelector(this.querySelector);
+        
+        if(!DOM){
+            throw 'ERROR: not finde selektor Fix pleas';
+        }  
+        let HTML='';
+        HTML += `<p class="aboutPlomg" >${aboutData[0].titleLong}</p>`
+        DOM.innerHTML=HTML;
+    }
 }
 }
 
+console.log(AboutAs);
+
+// export default ProgressBarX3;
+export {ProgressBarX3,AboutAs};
