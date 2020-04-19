@@ -18,9 +18,10 @@
     color: #737B83;
 }
 .aboutH2{
-    display: grid;
+    display: flex;
     justify-content: center;
     font-size: 2rem
+    
 }
 .aboutimg{
         display: grid;
