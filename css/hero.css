@@ -94,7 +94,6 @@
             transform: translate(-100%, -100%) rotate(-45deg);
         }
     
-
     @keyframes animationFrames{
         0% {
           transform:  translate(-0px,-54px)  ;
