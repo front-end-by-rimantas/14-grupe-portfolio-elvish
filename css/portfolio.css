@@ -29,11 +29,11 @@
             .gallery .item > .text {
                 display: none;
                 position: absolute;
-                top: 0;
-                right: 0;
-                left: 0;
-                bottom: 0;
-                background-color: #f005;
+                top: 10px;
+                right: 10px;
+                left: 10px;
+                bottom: 10px;
+                background-color: #0008;
                 color: #fff;
                 font-size: 30px;
             }

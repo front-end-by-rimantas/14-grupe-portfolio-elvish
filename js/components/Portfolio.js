@@ -68,7 +68,51 @@ class Portfolio {
     }
 
     renderFilter() {
-        return;
+        let tags = [];
+        for ( let i=0; i<data.length; i++ ) {
+            for ( let t=0; t<data[i].categories.length; t++ ) {
+                const tag = data[i].categories[t].toLowerCase();
+                
+                if ( tags.indexOf(tag) === -1 ) {
+                    tags.push(tag);
+                }
+            }
+        }
+
+        let HTML = '<div class="tag active" data-tag="all">All categories</div>';
+        for ( let i=0; i<tags.length; i++ ) {
+            HTML += `<div class="tag" data-tag="${tags[i]}">${tags[i]}</div>`;
+        }
+        this.DOMfilter.innerHTML = HTML;
+
+        const DOMtags = this.DOMfilter.querySelectorAll('.tag');
+        const DOMworks = this.DOMlist.querySelectorAll('.item');
+        for ( let i=0; i<DOMtags.length; i++ ) {
+            DOMtags[i].addEventListener('click', () => {
+                this.DOMfilter.querySelector('.tag.active').classList.remove('active');
+                DOMtags[i].classList.add('active');
+
+                const clickedTag = DOMtags[i].dataset.tag;
+
+                if ( clickedTag === 'all' ) {
+                    for ( let m=0; m<data.length; m++ ) {
+                        DOMworks[m].classList.remove('hidden');
+                    }
+                } else {
+                    // show/hide works based on selected tag
+                    for ( let m=0; m<data.length; m++ ) {
+                        DOMworks[m].classList.add('hidden');
+                        for ( let t=0; t<data[m].categories.length; t++ ) {
+                            const tag = data[m].categories[t].toLowerCase();
+                            if ( tag === clickedTag ) {
+                                DOMworks[m].classList.remove('hidden');
+                                break;
+                            }
+                        }
+                    }
+                }
+            })
+        }
     }
 }
 
