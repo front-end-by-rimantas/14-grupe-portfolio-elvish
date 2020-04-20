@@ -5,6 +5,7 @@
     color: var(--dark-color-anti);
     position: relative;
 }
+
 .hero > .row >.hight{
     display: inline-block;
     position: absolute;
@@ -92,7 +93,7 @@
         .wheel::after{
             transform: translate(-100%, -100%) rotate(-45deg);
         }
-    }
+    
 
     @keyframes animationFrames{
         0% {
