@@ -1,6 +1,9 @@
 @import './variables.css';
+@import './font-awesome.min.css';
 @import './reset.css';
+@import './font-awesome.min.css';
 @import './layout.css';
+@import './button.css';
 @import './common.css';
 @import './header.css';
 @import './hero.css';
