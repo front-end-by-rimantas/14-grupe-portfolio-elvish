@@ -1,0 +1,95 @@
+.contact-info {
+    display: inline-block;
+    text-align: center;
+}
+
+    .icons {
+        display: inline-block;
+        width: 100%;
+        font-size: 40px;
+        line-height: 42px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .subheader {
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .communication {
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        line-height: 24px;
+        color: #999;
+    }
+
+form {
+    display: inline-block;
+    width: 100%;
+}    
+
+    .name {
+        display: inline-block;
+        width: 45%;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-left: 15px;
+        
+    }
+
+    .email {
+        display: inline-block;
+        width: 50%;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 10px;
+        float: right;
+        margin-left: 20px;
+    }
+
+    .subject {
+        display: inline-block;
+        width: 98%;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .message {
+        display: inline-block;
+        width: 98%;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+
+        input,
+        textarea {
+            display: inline-block;
+            width: 100%;
+            padding: 10px 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            font-size: 18px;
+
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .send {
+            display: inline-block;
+            float: right;
+        }
+
+  
