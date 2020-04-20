@@ -51,20 +51,20 @@ class Portfolio {
 
         for (let i=0; i<data.length; i++) {
             const project = data[i];
+            let tagHTML = '';
+            for (let t=0; t<project.categories.length; t++) {
+                tagHTML += `<li>${project.categories[t]}</li>`;
+            }
             HTML += `
                 <div class="item">
                     <img src="./img/gallery/${project.photo}" alt="Gallery photo">
                     <div class="text">
                         <h5>${project.name}</h5>
-                        <ul>
-                            <li>tag1</li>
-                            <li>tag2</li>
-                            <li>tag3</li>
-                        </ul>
+                        <ul>${tagHTML}</ul>
                     </div>
                 </div>`;
         }
-        this.DOMlist.innerHTML = HTML;
+        return this.DOMlist.innerHTML = HTML;
     }
 
     renderFilter() {
