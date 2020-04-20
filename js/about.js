@@ -25,16 +25,14 @@ class ProgressBarX3 {
         var num2=this.progess3;
         HTML +=`  <p class="namebar${x}">${name}</p>
         <p class="numberbar${x}">${num}%</p>
-    <div class="fon"><div class="myBar${x++}"></div></div>
+        <div class="fon"><div class="myBar${x++}"></div></div>
         <p class="namebar${x}">${name1}</p>
         <p class="numberbar${x}">${num1}%</p>
         <div class="fon"><div class="myBar${x++}"></div></div>
         <p class="namebar${x}">${name2}</p>
         <p class="numberbar${x}">${num2}%</p>
         <div class="fon"><div class="myBar${x}"></div></div> `;
-        par.innerHTML = HTML;
-        console.log(par);
-       console.log(this.step);   
+        par.innerHTML = HTML; 
         return this.dom=par;
     }
 }
@@ -42,7 +40,7 @@ class ProgressBarX3 {
 
 import aboutData from './data/AboutMe-data.js';
 // --------------Make progress bar 3x lin END------------
-console.log(aboutData[0].titleShort);
+
 
 // --------------Make 3 paragraph H1 H2 P-----------
 class AboutAs {
@@ -79,7 +77,7 @@ class AboutAs {
             throw 'ERROR: not finde selektor Fix pleas';
         }  
         let HTML='';
-        HTML += ` <img class="aboutimg" src=${aboutData[0].icon} alt="" srcset="">`
+        HTML += ` <div class="aboutimg"></div>`
         DOM.innerHTML=HTML;
     }
     if (this.querySelector == '.aboutMeh2_1'){
@@ -105,7 +103,7 @@ class AboutAs {
 }
 }
 
-console.log(AboutAs);
 
-// export default ProgressBarX3;
+
+
 export {ProgressBarX3,AboutAs};
