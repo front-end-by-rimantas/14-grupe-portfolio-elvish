@@ -1,0 +1,50 @@
+.gallery {
+    display: inline-block;
+    width: 100%;
+}
+    .gallery > .filter {
+        display: inline-block;
+        width: 100%;
+    }
+    .gallery > .list {
+        display: inline-block;
+        width: calc(100% + 20px);
+        margin: 0 -10px;
+    }
+        .gallery > .list > .item {
+            display: inline-block; 
+            float: left;
+            width: calc(100% / 3 - 20px);
+            margin: 10px;
+            position: relative;
+        }
+            .gallery .item > img {
+                display: inline-block;
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                object-position: center;
+            }
+            .gallery .item > .text {
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background-color: #f005;
+                color: #fff;
+                font-size: 30px;
+            }
+                .gallery .item h5 {
+                    
+                }
+                .gallery .item ul {
+                    
+                }
+                    .gallery .item li {
+                        
+                    }
+            .gallery .item:hover > .text {
+                display: inline-block;
+            }
