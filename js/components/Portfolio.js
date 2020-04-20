@@ -21,12 +21,12 @@ class Portfolio {
     isValid() {
         const DOM = document.querySelector(this.target);
         if (!DOM) {
-            throw 'ERROR: target selector is incorrect...'
+            throw 'ERROR: target selector is incorrect...';
         }
         this.DOM = DOM;
 
         if (!Array.isArray(data) || data.length === 0 ) {
-            throw 'ERROR: data must be a non-empty array...'
+            throw 'ERROR: data must be a non-empty array...';
         }
 
         return true;
