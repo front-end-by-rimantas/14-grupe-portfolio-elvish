@@ -58,7 +58,7 @@ class Portfolio {
             HTML += `
                 <div class="item">
                     <img src="./img/gallery/${project.photo}" alt="Gallery photo">
-                    <div class="text">
+                    <div class="overlay">
                         <h5>${project.name}</h5>
                         <ul>${tagHTML}</ul>
                     </div>

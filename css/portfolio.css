@@ -5,7 +5,41 @@
     .gallery > .filter {
         display: inline-block;
         width: 100%;
+        margin-bottom: 60px;
     }
+        .gallery > .filter > .tag {
+            display: inline-block;
+            padding: 5px 14px;
+            float: left;
+            color: #444;
+            font-size: 20px;
+            text-transform: capitalize;
+            line-height: 30px;
+            cursor: pointer;
+            position: relative;
+        }
+            .gallery > .filter > .tag::after {
+                content: "*";                
+                position: absolute;
+                top: 3px;
+                display: inline-block;
+                color: #bbb;
+                margin: 5px 10px; 
+            }
+            .gallery > .filter > .tag:last-child::after {
+                content: "";                
+                position: absolute;
+                top: 3px;
+                display: inline-block;
+                color: #bbb;
+                margin: 5px 5px;
+            }
+            .gallery > .filter > .tag:hover,
+            .gallery > .filter > .tag.active {
+                color: #fff;
+                background-color: #000;
+                border-radius: 7px;
+            }
     .gallery > .list {
         display: inline-block;
         width: calc(100% + 20px);
@@ -17,8 +51,13 @@
             width: calc(100% / 3 - 20px);
             margin: 10px;
             position: relative;
+            border-radius: 10px;
+            overflow: hidden;
             cursor: pointer;
         }
+            .gallery > .list > .item.hidden {
+                display: none;
+            }
             .gallery .item > img {
                 display: inline-block;
                 width: 100%;
@@ -26,26 +65,41 @@
                 object-fit: cover;
                 object-position: center;
             }
-            .gallery .item > .text {
+            .gallery .item > .overlay {
                 display: none;
                 position: absolute;
                 top: 10px;
                 right: 10px;
                 left: 10px;
                 bottom: 10px;
-                background-color: #0008;
+                /* background-color: #0008; */
                 color: #fff;
-                font-size: 30px;
+                border-radius: 10px;
+                transition: all 0.5s;
             }
                 .gallery .item h5 {
-                    
+                    display: inline-block;
+                    float: right;
+                    padding: 20px 20px 0 0;
                 }
                 .gallery .item ul {
-                    
+                    display: inline-block;
+                    /* width: 100%; */
+                    float: right;
                 }
                     .gallery .item li {
-                        
+                        display: inline-block;
+                        padding: 0 5px;
+                        list-style: none;
+                        background-color: var(--main-color);
+                        color: #fff;
+                        font-size: 17px;
+                        line-height: 20px;
+                        text-transform: capitalize;
                     }
-            .gallery .item:hover > .text {
+            .gallery .item:hover > .overlay {
                 display: inline-block;
+            }
+            .gallery .item > .overlay:hover {
+                background-color: #0008;
             }
