@@ -1,6 +1,8 @@
 :root{
     --dark-color: #373A3E;
     --light-color: #F8F9FA;
+    --background-color:rgba(0, 0, 0, 0.7);
 
+    --light-color-anti: #6c757d;    /* paragraph <p> font color */
     --dark-color-anti: #fff;
 }
