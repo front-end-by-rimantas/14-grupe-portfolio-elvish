@@ -1,3 +1,4 @@
-.vscode
+/.vscode
 *.min.css
 *.min.js
+!font-awesome.min.css
