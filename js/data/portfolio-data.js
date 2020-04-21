@@ -4,7 +4,7 @@ const data = [
     {
         photo: '1.jpg',
         name: 'Studio & Art',
-        categories: ['ui elements', 'icons']
+        categories: ['UI elements', 'icons']
     },
     {
         photo: '2.jpg',
@@ -19,7 +19,7 @@ const data = [
     {
         photo: '4.jpg',
         name: 'Locked Steel Gate',
-        categories: ['graphics', 'ui elements']
+        categories: ['graphics', 'UI elements']
     },
     {
         photo: '5.jpg',
@@ -29,7 +29,7 @@ const data = [
     {
         photo: '6.jpg',
         name: 'Backpack Contents',
-        categories: ['ui elements', 'media', 'icons']
+        categories: ['UI elements', 'media', 'icons']
     }
 ]
 

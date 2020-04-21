@@ -85,6 +85,7 @@
                 left: 10px;
                 bottom: 10px;
                 border-radius: 10px;
+                overflow: hidden;
                 transition: all 0.5s;
             }
             .gallery .item > .overlay::after {
@@ -98,17 +99,19 @@
                     background: #0008;
                     border-radius: 30%;
                     opacity: 0;
-                    /* height: 50%; */
                     transition: all 150ms ease-in-out 200ms;
                 }
                 .gallery .item h5 {
                     display: inline-block;
-                    position: relative;
-                    padding: 20px 20px 0 0;
+                    position: absolute;
+                    top: 20px;
+                    right: 25px;
+                    padding: 5px;
                     font-size: 18px;
                     font-weight: 400;
                     color: transparent;
                     overflow: hidden;
+                    z-index: 2;
                     transition: color 150ms ease-in-out 200ms;
                 }
                     .gallery .item h5::before {
@@ -117,15 +120,16 @@
                         background: #fff;                        
                         position: absolute;
                         top: 0;
-                        /* right: auto; */
+                        right: auto;
                         bottom: 0;
                         left: 100%;
                         transition: left 600ms ease-in-out 0s;
                     }
                 .gallery .item ul {
                     display: inline-block;
-                    padding: 0 15px;
-                    position: relative;
+                    position: absolute;
+                    top: 50px;
+                    right: 25px;
                     overflow: hidden;
                 }
                     .gallery .item ul::before {
@@ -136,29 +140,30 @@
                         top: 0;
                         right: 100%;                        
                         bottom: 0;
+                        z-index: 2;
                         transition: right 600ms ease-in-out 0s;
                     }
                     .gallery .item li {
                         display: inline-block;
-                        position: relative;
+                        position: relative;                        
                         padding: 0 5px;
                         list-style: none;
                         background-color: var(--main-color);
-                        color: #ccc;
                         font-size: 14px;
                         line-height: 20px;
                         letter-spacing: 1px;
                         text-transform: capitalize;
                         color: transparent;
+                        z-index: 2;
                         transition: color 150ms ease-in-out 200ms;
                     }
                         .gallery .item li::after {
-                            content: ",";                
+                            content: ',';            
                             position: absolute;
                             top: 0;
                         }  
                         .gallery .item li:last-child::after {
-                            content: "";  
+                            content: '';  
                         }          
             .gallery .item:hover .overlay::after {
                 content: '';
@@ -168,7 +173,7 @@
                 left: 0;
                 top: 0;
                 bottom: 0;
-                background: #0009;
+                background: #000c;
                 border-radius: 7px;
                 opacity: 1;               
             }
@@ -179,14 +184,10 @@
                 color: #ccc;
             }
             .gallery .item:hover> .overlay h5::before {
-                width: 100%;
-                left: 0;
-                color: #fff;
+                left: -101%;
             }            
             .gallery .item:hover > .overlay ul::before {
-                width: 100%;
-                right: 0;
-                color: #fff;
+                right: -100%;
             }
             .gallery .item:hover img {
                 transform: scale(1.1);
