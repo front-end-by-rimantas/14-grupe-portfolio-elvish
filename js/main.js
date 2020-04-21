@@ -9,7 +9,7 @@ const Abotimg = new AboutAs ('.aboutimg_1');
 const aboutUx = new AboutAs ('.aboutMeh2_1');
 const aboutLong = new AboutAs ('.aboutPlomg_1');
 
-import aboutData from './data/AboutMe-data.js'
+
 import {ProgressBarX3,AboutAs} from './about.js';
 import GreatPeple from './greatPeple.js'
 import SectionHeading from './components/SectionHeading.js';

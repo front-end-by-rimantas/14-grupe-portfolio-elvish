@@ -20,29 +20,34 @@ class GreatPeple{
   if(!DOM){
       throw 'ERROR Great peple Selektor break';
   }
+  let x=0;
   HTML = '';
   HTML +=`   
             <div class="col-2 greatimg">
-               <img class="greatImg" src="./img/1.png" alt="" srcset="">
+               <img class="greatImg" src=${greatData[x++].img}>
             </div> 
             <div class="col-2">
-               <img class="greatImg" src="./img/2.png" alt="" srcset="">
+               <img class="greatImg" src=${greatData[x++].img}>
             </div>
             <div class="col-2">
-              <img class="greatImg" src="./img/3.png" alt="" srcset="">
+              <img class="greatImg" src=${greatData[x++].img}>
             </div>
             <div class="col-2">
-              <img class="greatImg" src="./img/4.png" alt="" srcset="">
+              <img class="greatImg" src=${greatData[x++].img}>
             </div>
             <div class="col-2">
-              <img class="greatImg" src="./img/5.png" alt="" srcset="">
+              <img class="greatImg" src=${greatData[x++].img}>
             </div>
             <div class="col-2">
-              <img class="greatImg" src="./img/6.png" alt="" srcset="">
+              <img class="greatImg" src=${greatData[x++].img}>
             </div>`
 DOM2.innerHTML = HTML; 
+
+
   
 }
 
 }
 export default  GreatPeple;
+import greatData from './data/greatData.js'
+
