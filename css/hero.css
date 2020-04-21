@@ -5,6 +5,7 @@
     color: var(--dark-color-anti);
     position: relative;
 }
+
 .hero > .row >.hight{
     display: inline-block;
     position: absolute;
