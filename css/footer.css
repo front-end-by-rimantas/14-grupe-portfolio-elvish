@@ -1,0 +1,35 @@
+.copyright {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.social {
+    display: inline-block;
+    float: right;
+    color: #999;
+    
+    
+}
+
+.icon {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 30px;
+    color: #999;
+    margin-left: 20px;
+}
+
+.fa-facebook {
+    display: inline-block;
+    padding: 20px 24px;
+    
+}
+
+.fa-google-plus {
+    display: inline-block;
+    padding: 0px;
+}
