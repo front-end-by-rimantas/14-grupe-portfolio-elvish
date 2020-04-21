@@ -31,5 +31,10 @@
 
 .fa-google-plus {
     display: inline-block;
-    padding: 0px;
+    padding: 20px 18px;
+}
+
+.fa-linkedin {
+    display: inline-block;
+    padding: 20px 22px;
 }
