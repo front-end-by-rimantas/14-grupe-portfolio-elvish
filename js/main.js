@@ -11,8 +11,7 @@ const aboutLong = new AboutAs ('.aboutPlomg_1');
 
 import aboutData from './data/AboutMe-data.js'
 import {ProgressBarX3,AboutAs} from './about.js';
-
-
+import GreatPeple from './greatPeple.js'
 import SectionHeading from './components/SectionHeading.js';
 import Achievements from './components/Achievements.js';
 import Experience from './components/Experience.js';
@@ -27,3 +26,5 @@ for ( let i=0; i<allDataH2.length; i++ ) {
 new Achievements('#achievements > .row');
 
 new Experience ('#experience .row:nth-child(3)');
+
+new GreatPeple ('.greatp','.greatimg')
