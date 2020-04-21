@@ -15,6 +15,7 @@ import GreatPeple from './greatPeple.js'
 import SectionHeading from './components/SectionHeading.js';
 import Achievements from './components/Achievements.js';
 import Experience from './components/Experience.js';
+import Portfolio from './components/Portfolio.js';
  
 // find all attr with 'data-h2' to create H2 elements
 const allDataH2 = document.querySelectorAll('[data-h2],[data-h2-bold],[data-place]');
@@ -27,4 +28,8 @@ new Achievements('#achievements > .row');
 
 new Experience ('#experience .row:nth-child(3)');
 
+
 new GreatPeple ('.greatp','.greatimg')
+
+new Portfolio ('#portfolio > .row:nth-child(3) > .col-12');
+
