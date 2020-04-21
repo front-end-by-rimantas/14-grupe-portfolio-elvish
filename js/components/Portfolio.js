@@ -57,6 +57,7 @@ class Portfolio {
             }
             HTML += `
                 <div class="item">
+                    <a class="img-zoom" href="./img/gallery/${project.photo}"></a>
                     <img src="./img/gallery/${project.photo}" alt="Gallery photo">
                     <div class="overlay">
                         <h5>${project.name}</h5>
@@ -79,7 +80,7 @@ class Portfolio {
             }
         }
 
-        let HTML = '<div class="tag active" data-tag="all">All categories</div>';
+        let HTML = '<div class="tag active" data-tag="all">All</div>';
         for ( let i=0; i<tags.length; i++ ) {
             HTML += `<div class="tag" data-tag="${tags[i]}">${tags[i]}</div>`;
         }
