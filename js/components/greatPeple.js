@@ -1,3 +1,5 @@
+"use strict";
+
 class GreatPeple{
    constructor(selectorP,selectorImg){
    this.selectorp = selectorP;
@@ -20,30 +22,16 @@ class GreatPeple{
   if(!DOM){
       throw 'ERROR Great peple Selektor break';
   }
-  let x=0;
+  
   HTML = '';
-  HTML +=`   
+  for (let index = 0; index < greatData.length; index++) {
+    console.log(index);
+    HTML +=`   
             <div class="col-2 greatimg">
-               <img class="greatImg" src=${greatData[x++].img}>
-            </div> 
-            <div class="col-2">
-               <img class="greatImg" src=${greatData[x++].img}>
-            </div>
-            <div class="col-2">
-              <img class="greatImg" src=${greatData[x++].img}>
-            </div>
-            <div class="col-2">
-              <img class="greatImg" src=${greatData[x++].img}>
-            </div>
-            <div class="col-2">
-              <img class="greatImg" src=${greatData[x++].img}>
-            </div>
-            <div class="col-2">
-              <img class="greatImg" src=${greatData[x++].img}>
-            </div>`
-DOM2.innerHTML = HTML; 
-
-
+    <img class="greatImg" src=${greatData[index].img}></div> `
+    DOM2.innerHTML = HTML;
+    
+  }
   
 }
 
