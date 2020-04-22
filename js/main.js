@@ -17,6 +17,7 @@ import SectionHeading from './components/SectionHeading.js';
 import Achievements from './components/Achievements.js';
 import Experience from './components/Experience.js';
 import Portfolio from './components/Portfolio.js';
+import Blog from './components/Blog.js';
  
 // find all attr with 'data-h2' to create H2 elements
 const allDataH2 = document.querySelectorAll('[data-h2],[data-h2-bold],[data-place]');
