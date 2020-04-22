@@ -1,16 +1,5 @@
-.great{
-/* display: grid; */
-/* grid-template-columns: repeat(12,1fr); */
-/* grid-column-gap: 30px; */
-/* width: 800px; */
-/* height: 100px; */
-
-}
 .greatImg{
-   
-    /* width: 160px; */
-    height: 100px;
+
+height: 100px;
 margin-bottom: 80px;
-    /* border: 30px; */
-    /* height: 100px;    */
 }
