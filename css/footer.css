@@ -32,6 +32,7 @@ footer.container {
     text-align: center;
     margin-left: 10px;
     transition: transform 0.5s;
+    
 }
 
 .icon:hover {
@@ -50,22 +51,22 @@ footer.container {
     }
 } 
 
-.fa-facebook {
+.fb {
     display: inline-block;
     padding: 11px 15px;
     
 }
 
-.fa-google-plus {
+.gp {
     display: inline-block;
     padding: 10px 8px;
 }
 
-.fa-linkedin {
+.ln {
     display: inline-block;
     padding: 11px 12.7px;
 }
 
-.fa-twitter {
+.tw {
     padding: 11px 12px;
 }
