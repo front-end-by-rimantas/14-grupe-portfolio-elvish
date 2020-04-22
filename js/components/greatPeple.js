@@ -49,5 +49,5 @@ DOM2.innerHTML = HTML;
 
 }
 export default  GreatPeple;
-import greatData from './data/greatData.js'
+import greatData from '../data/greatData.js'
 

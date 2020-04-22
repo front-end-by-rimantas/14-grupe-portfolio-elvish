@@ -38,7 +38,7 @@ class ProgressBarX3 {
 }
 
 
-import aboutData from './data/AboutMe-data.js';
+import aboutData from '../data/AboutMe-data.js';
 // --------------Make progress bar 3x lin END------------
 
 
