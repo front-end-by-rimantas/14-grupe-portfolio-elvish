@@ -4,6 +4,7 @@ class Header {
         this.DOM = null;
 
         this.init();
+        this.scroll();
     }
 
     init() {
@@ -16,30 +17,52 @@ class Header {
     }
 
     render() {
-        const meny = document.querySelector('nav');
-        const height = meny[0].offsetTop - window.innerHeight;
-        const items = document.querySelectorAll('[data-menu]');
-
-        window.addEventListener('scroll', () => {
-                if( height === window.scrollY){
-                    console.log(window.scrollY)
-                let HTML = '';
-                for ( let i=0; i<items.length; i++ ) {
-                    const it = items[i];
-                    const itd = it.dataset;
-                    const itemID = it.getAttribute('id');
-                    if ( itemID === null ) {
-                        HTML += `<a href="${itd.menuUrl}">
-                                    ${itd.menu}
-                                </a>`;
-                    } else {
-                        HTML += `<a href="#${itemID}">${itd.menu}</a>`;
-                    }
-                }
-                this.DOM.innerHTML = HTML;
+        
+    const items = document.querySelectorAll('[data-menu]');
+    
+        let HTML = '';
+        for ( let i=0; i<items.length; i++ ) {
+            const it = items[i];
+            const itd = it.dataset;
+            const itemID = it.getAttribute('id');
+            if ( itemID === null ) {
+                HTML += `<a href="${itd.menuUrl}">
+                            ${itd.menu}
+                        </a>`;
+            } else {
+                HTML += `<a id="menu" href="#${itemID}">${itd.menu}</a>`;
             }
-        })
-    }   
+        }
+        this.DOM.innerHTML = HTML;
+    }
+    
+     scroll(){
+        const logo = document.querySelector('#logo');
+        console.log(logo)
+        window.addEventListener("scroll", ()=>{
+           
+            if (window.scrollY < 80) {
+                document.querySelector('header').classList.add('color')
+                document.querySelector('header').classList.remove('colorChange')
+
+                document.querySelector('#menu').classList.add('white')
+                document.querySelector('#menu').classList.remove('black')
+
+                logo.classList.remove('logo-1');
+                logo.classList.add('logo-2');
+                
+            } else {
+                document.querySelector('header').classList.add('colorChange')
+                document.querySelector('header').classList.remove('color')
+
+                document.querySelector('#menu').classList.add('black')
+                document.querySelector('#menu').classList.remove('white')
+
+                logo.classList.remove('logo-2');
+                logo.classList.add('logo-1');
+                
+            }})
+        }
 }
 
 export default Header;
