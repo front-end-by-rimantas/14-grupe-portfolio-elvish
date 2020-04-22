@@ -1,0 +1,50 @@
+.textP{
+    display: grid;
+    height: 100px;
+    align-content: center;
+}
+.aboutPlomg{
+  
+    width: 700px;
+    height: 70px;
+    margin-top: 50px;
+    margin: 0 calc(50% - 350px);
+    text-align: center;
+    color: #737B83;
+    margin-bottom: 50px;
+  
+}
+.aboutMeh2{
+    display: grid;
+    justify-content: center;
+    color: #737B83;
+    margin-bottom: 50px;
+}
+.aboutH2{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: black;
+    
+}
+.aboutimg{
+        margin:auto;
+        height: 100px;
+        background-image: url(/img/signature.PNG);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+}
+.aboutimg_1{
+     
+        margin-bottom: 40px;
+      
+      }
+.aboutfirstP{
+    width: 500px;
+    height: 70px;
+    margin-top: 50px;
+    margin: 0 calc(50% - 250px);
+    text-align: center;
+    color: #737B83; 
+}
