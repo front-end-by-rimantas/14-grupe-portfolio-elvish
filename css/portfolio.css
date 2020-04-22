@@ -1,0 +1,194 @@
+.gallery {
+    display: inline-block;
+    width: 100%;
+}
+    .gallery > .filter {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: calc(100% + 20px);
+        margin: 0 -10px 50px;
+        text-align: center;
+    }
+        .gallery > .filter > .tag {
+            display: inline-block;
+            padding: 0 14px;
+            margin: 5px 10px;
+            float: left;
+            color: #444;
+            font-size: 16px;
+            text-transform: capitalize;
+            line-height: 30px;
+            cursor: pointer;
+            position: relative;
+        }
+            .gallery > .filter > .tag::after {
+                content: '*';                
+                position: absolute;
+                top: -10px;
+                display: inline-block;
+                color: #bbb;
+                margin: 5px 10px;
+                padding: 10px; 
+            }
+            .gallery > .filter > .tag:last-child::after {
+                content: '';
+            }
+            .gallery > .filter > .tag:hover,
+            .gallery > .filter > .tag.active {
+                color: #fff;
+                background-color: #000;
+                border-radius: 7px;
+            }
+    .gallery > .list {
+        display: inline-block;
+        width: calc(100% + 20px);
+        margin: 0 -10px;
+    }
+        .gallery > .list > .item {
+            display: inline-block; 
+            float: left;
+            width: calc(100% / 3 - 20px);
+            margin: 10px;
+            position: relative;
+            border-radius: 7px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+            .gallery > .list > .item.hidden {
+                display: none;
+            }
+            .gallery .item > a {
+                display: inline-block;
+                width: 100%;                
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+            }
+            .gallery .item > img {
+                display: inline-block;
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                object-position: center;
+                transition: all 0.5s;
+            }
+            .gallery .item > .overlay {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;                
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                left: 10px;
+                bottom: 10px;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: all 0.5s;
+            }
+            .gallery .item > .overlay::after {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    bottom: 50%;
+                    background: #0008;
+                    border-radius: 30%;
+                    opacity: 0;
+                    transition: all 150ms ease-in-out 200ms;
+                }
+                .gallery .item h5 {
+                    display: inline-block;
+                    position: absolute;
+                    top: 20px;
+                    right: 25px;
+                    padding: 5px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: transparent;
+                    overflow: hidden;
+                    z-index: 2;
+                    transition: color 150ms ease-in-out 200ms;
+                }
+                    .gallery .item h5::before {
+                        content: '';
+                        width: 100%;
+                        background: #fff;                        
+                        position: absolute;
+                        top: 0;
+                        right: auto;
+                        bottom: 0;
+                        left: 100%;
+                        transition: left 600ms ease-in-out 0s;
+                    }
+                .gallery .item ul {
+                    display: inline-block;
+                    position: absolute;
+                    top: 50px;
+                    right: 25px;
+                    overflow: hidden;
+                }
+                    .gallery .item ul::before {
+                        content: '';
+                        width: 100%;
+                        background: #fff;                        
+                        position: absolute;
+                        top: 0;
+                        right: 100%;                        
+                        bottom: 0;
+                        z-index: 2;
+                        transition: right 600ms ease-in-out 0s;
+                    }
+                    .gallery .item li {
+                        display: inline-block;
+                        position: relative;                        
+                        padding: 0 5px;
+                        list-style: none;
+                        background-color: var(--main-color);
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 1px;
+                        text-transform: capitalize;
+                        color: transparent;
+                        z-index: 2;
+                        transition: color 150ms ease-in-out 200ms;
+                    }
+                        .gallery .item li::after {
+                            content: ',';            
+                            position: absolute;
+                            top: 0;
+                        }  
+                        .gallery .item li:last-child::after {
+                            content: '';  
+                        }          
+            .gallery .item:hover .overlay::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                background: #000c;
+                border-radius: 7px;
+                opacity: 1;               
+            }
+            .gallery .item:hover > .overlay h5 {
+                color: #fff;
+            }
+            .gallery .item:hover > .overlay li {
+                color: #ccc;
+            }
+            .gallery .item:hover> .overlay h5::before {
+                left: -101%;
+            }            
+            .gallery .item:hover > .overlay ul::before {
+                right: -100%;
+            }
+            .gallery .item:hover img {
+                transform: scale(1.1);
+            }
