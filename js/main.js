@@ -1,4 +1,21 @@
 "use strict";
+import Header from './components/Header.js';
+import aboutData from './data/AboutMe-data.js'
+import {ProgressBarX3,AboutAs} from './about.js';
+import SectionHeading from './components/SectionHeading.js';
+import Achievements from './components/Achievements.js';
+import Experience from './components/Experience.js';
+import Portfolio from './components/Portfolio.js';
+
+//------hedre
+
+new Header('header nav');
+
+const DOMhamburger = document.querySelector('.hamburger');
+DOMhamburger.addEventListener('click', () => {
+    document.querySelector('header nav').classList.toggle('show');
+})
+
 
 // ----------aboutME-----------
 const Development  = new ProgressBarX3("Development",'WordPress','Photoshop',80,59,88,".myProgress1",1);
@@ -9,15 +26,7 @@ const Abotimg = new AboutAs ('.aboutimg_1');
 const aboutUx = new AboutAs ('.aboutMeh2_1');
 const aboutLong = new AboutAs ('.aboutPlomg_1');
 
-import aboutData from './data/AboutMe-data.js'
-import {ProgressBarX3,AboutAs} from './about.js';
 
-
-import SectionHeading from './components/SectionHeading.js';
-import Achievements from './components/Achievements.js';
-import Experience from './components/Experience.js';
-import Portfolio from './components/Portfolio.js';
- 
 // find all attr with 'data-h2' to create H2 elements
 const allDataH2 = document.querySelectorAll('[data-h2],[data-h2-bold],[data-place]');
 for ( let i=0; i<allDataH2.length; i++ ) {
