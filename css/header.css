@@ -27,19 +27,23 @@ header.colorChange{
     }
 header > .row .logo-2 {
     display: inline-block;
+    margin-top: 10px;
     height: 30px;
     width: 100px;
     background-image: url(../img/logo.png);
     background-position: center center;
     background-size: cover;
+    float: left;
 }
 header > .row .logo-1 {
     display: inline-block;
+    margin-top: 10px;
     height: 30px;
     width: 100px;
     background-image: url(../img/logo-dark.png);
     background-position: center center;
     background-size: cover;
+    float: left;
 }
 .hamburger {
     display: none;
