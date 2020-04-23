@@ -8,7 +8,7 @@
    
 h2 {
     display: inline-block;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 36px;
     line-height: 36px;
     text-align: center;
@@ -27,7 +27,7 @@ h2 {
 }
     .main-title-border:before {
             display: inline-block;
-            margin-top: -60px;
+            margin-top: -7px;
             vertical-align: middle;
             content: "";
             background-color: #d0d0d0;
@@ -36,7 +36,7 @@ h2 {
     }
     .main-title-border:after {
             display: inline-block;
-            margin-top: -60px;
+            margin-top: -7px;
             vertical-align: middle;
             content: "";
             background-color: #d0d0d0;
@@ -46,12 +46,14 @@ h2 {
 
         .main-title-border i {
             font-size: 20px;
-            margin-top: -28px;
+            margin-top: 0;
+            margin-left: 5px;
             font-weight: lighter;
         }
 p{
     display: inline-block;
     width: 100%;
+    margin-top: 20px;
     margin-bottom: 60px;
     font-size: 18px;
     line-height: 22px;
