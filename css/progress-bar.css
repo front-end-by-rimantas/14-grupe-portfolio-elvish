@@ -1,22 +1,9 @@
 .myProgress1 {
   display: inline;
   width: auto;
-  /* font-family: "Helvetica Neue", "Arial", sans-serif; */
-  /* font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; */
-  /* font-style:inherit;
-  font-weight: 100;
-  font-size: 1rem;
-  letter-spacing: 1px; */
-  
 }
 .myProgress2 {
   font-weight: bold;
-  
-  /* display: grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(12,1fr); */
-  /* background-color: grey; */
-  /* margin-top: 20px; */
 }
 /* ---------------Col 1--------------------- */
 .numberbar1{
@@ -37,10 +24,10 @@
 
 .numberbar2{
   display: inline;
-    margin-top: 30px;
-    float: right;
-    width: auto;
-    margin-bottom: 0;
+  margin-top: 30px;
+  float: right;
+  width: auto;
+  margin-bottom: 0;
 
   }
   .namebar2{
