@@ -27,7 +27,41 @@ class Achievements {
         DOM.innerHTML = HTML;
     }
 
+<<<<<<< Updated upstream
     updateCount(){
+=======
+    scroll() {
+        window.addEventListener('scroll', () => {
+            const height = this.DOMnumbers[0].offsetTop + window.innerHeight;
+            if ( height+200 < window.scrollY && !this.numbersAnimated ) {
+                console.log(height)
+                console.log("-"+window.scrollY)
+                const totalTime = 3000;
+                const framesPerSecond = 24;
+                const framesCount = (totalTime / 1000) * framesPerSecond;
+                let count = 0;
+
+                const clock = setInterval(() => {
+                    for ( let i=0; i<this.DOMnumbers.length; i++ ) {
+                        this.DOMnumbers[i].innerText = Math.ceil(count * parseInt(this.DOMnumbers[i].dataset.num) / framesCount);
+                    }
+                    count++;
+                    if ( count > framesCount ) {
+                        clearInterval(clock);
+                    }
+                }, 1000 / framesPerSecond);
+
+                this.numbersAnimated = true;
+                scroll()
+            }
+        })
+    }
+}
+
+export default Achievements;
+
+/*  updateCount(){
+>>>>>>> Stashed changes
         
         let counter = [0, 0, 0, 0];
         let step = 100;
