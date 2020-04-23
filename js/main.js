@@ -1,8 +1,7 @@
 "use strict";
 
 import Header from './components/Header.js';
-import aboutData from './data/AboutMe-data.js'
-import {ProgressBarX3,AboutAs} from './about.js';
+import aboutData from './data/AboutMe-data.js';
 import {ProgressBarX3,AboutAs} from './components/about.js';
 import GreatPeple from './components/greatPeple.js'
 import SectionHeading from './components/SectionHeading.js';
