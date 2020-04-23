@@ -1,0 +1,9 @@
+#clients.container {
+    /* background: url(../img/img-3.jpg);
+    background-size: cover;
+    background-position: center; */
+    position: relative;
+}
+    #clients p {
+        color: var(--dark-color-anti);
+    }
