@@ -4,8 +4,11 @@ import data from '../data/achievements-data.js';
 class Achievements {
     constructor(target){
         this.target = target;
+        this.numbersAnimated = false;
+
         this.render();
-        this.updateCount();
+        //this.updateCount();
+        this.scroll();
     }
 
     render(){
@@ -20,22 +23,19 @@ class Achievements {
             HTML += `
                 <div class="col-3 achievements">
                 <i class="fa fa-${ach.icon}"></i>
-                <div class="number">${ach.number}</div>
+                <div class="number" data-num=${ach.number}>${ach.number}</div>
                 <p>${ach.title}</p>
                 </div>`
         }
         DOM.innerHTML = HTML;
+        this.DOMnumbers = DOM.querySelectorAll('.number');
     }
 
-<<<<<<< Updated upstream
-    updateCount(){
-=======
     scroll() {
         window.addEventListener('scroll', () => {
             const height = this.DOMnumbers[0].offsetTop + window.innerHeight;
             if ( height+200 < window.scrollY && !this.numbersAnimated ) {
-                console.log(height)
-                console.log("-"+window.scrollY)
+
                 const totalTime = 3000;
                 const framesPerSecond = 24;
                 const framesCount = (totalTime / 1000) * framesPerSecond;
@@ -52,7 +52,7 @@ class Achievements {
                 }, 1000 / framesPerSecond);
 
                 this.numbersAnimated = true;
-                scroll()
+
             }
         })
     }
@@ -61,7 +61,6 @@ class Achievements {
 export default Achievements;
 
 /*  updateCount(){
->>>>>>> Stashed changes
         
         let counter = [0, 0, 0, 0];
         let step = 100;
@@ -86,6 +85,17 @@ export default Achievements;
         setInterval(counterFunction, 20);
         
     }
-}
+
 export default Achievements;
 
+function offset(elem) {
+    if(!elem) elem = this;
+
+    var y = elem.offsetTop;
+
+    while (elem = elem.offsetParent) {
+        y += elem.offsetTop;
+    }
+
+    return { top: y };
+}*/
