@@ -31,7 +31,7 @@ class Header {
                             ${itd.menu}
                         </a>`;
             } else {
-                HTML += `<a id="menu" href="#${itemID}">${itd.menu}</a>`;
+                HTML += `<a id="nava" href="#${itemID}">${itd.menu}</a>`;
             }
         }
         this.DOM.innerHTML = HTML;
@@ -39,10 +39,19 @@ class Header {
     }
     
      scroll(){
-        const logo = document.querySelector('#logo');
-
-        for( let x=0; x<logo.length; x++ ){
-            console.log(logo[x])
+               
+        for( let x=0; x<nava.length; x++ ){
+            let nav=nava[x];
+            console.log( nav);
+            window.addEventListener("scroll", ()=>{
+                if(window.scrollY < 80){
+                    nav.classList.add('white')
+                    nav.classList.remove('black')
+                } else {
+                    nav.classList.add('black')
+                    nav.classList.remove('white')
+                }
+            })
         }
         
         window.addEventListener("scroll", ()=>{
@@ -51,21 +60,15 @@ class Header {
                 document.querySelector('header').classList.add('color')
                 document.querySelector('header').classList.remove('colorChange')
 
-                document.querySelector('#menu').classList.add('white')
-                document.querySelector('#menu').classList.remove('black')
-
-                logo.classList.remove('logo-1');
-                logo.classList.add('logo-2');
+                document.querySelector('#logo').classList.remove('logo-1');
+                document.querySelector('#logo').classList.add('logo-2');
                 
             } else {
                 document.querySelector('header').classList.add('colorChange')
                 document.querySelector('header').classList.remove('color')
 
-                document.querySelector('#menu').classList.add('black')
-                document.querySelector('#menu').classList.remove('white')
-
-                logo.classList.remove('logo-2');
-                logo.classList.add('logo-1');
+                document.querySelector('#logo').classList.remove('logo-2');
+                document.querySelector('#logo').classList.add('logo-1');
             }
         })
     }
