@@ -31,3 +31,5 @@ new Achievements('#achievements > .row');
 new Experience ('#experience .row:nth-child(3)');
 
 new Portfolio ('#portfolio > .row:nth-child(3) > .col-12');
+
+new Blog ('#blog .row:nth-child(3)');

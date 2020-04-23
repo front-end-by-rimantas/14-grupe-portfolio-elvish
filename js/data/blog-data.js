@@ -12,7 +12,7 @@ const data = [
         readmore: 'Read More...' 
     },
     {
-        media: 'video.mp4',
+        media: 'blog-2.jpg',
         title: 'Contrary to popular belief',
         category: 'Travel',
         date: '13 February 2018',
@@ -32,3 +32,5 @@ const data = [
         readmore: 'Read More...'  
     }
 ];
+
+export default data;
