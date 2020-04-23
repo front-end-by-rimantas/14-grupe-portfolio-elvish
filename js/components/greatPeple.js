@@ -25,7 +25,6 @@ class GreatPeple{
   
   HTML = '';
   for (let index = 0; index < greatData.length; index++) {
-    console.log(index);
     HTML +=`   
             <div class="col-2 greatimg">
     <img class="greatImg" src=${greatData[index].img}></div> `
