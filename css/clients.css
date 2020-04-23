@@ -1,9 +1,52 @@
 #clients.container {
-    /* background: url(../img/img-3.jpg);
-    background-size: cover;
-    background-position: center; */
+    background: var(--background-color);
     position: relative;
 }
     #clients p {
         color: var(--dark-color-anti);
+    }    
+    .testimonial-block {
+        display: inline-block;
+        text-align: center;
+    }        
+        .testimonial-block > .fa {
+            font-size: 60px;
+            margin-bottom: 25px;
+            font-weight: lighter;
+        }
+        .testimonial-block > .client {
+            display: inline-block;
+            width: 100%;
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .testimonial-block > .company {
+            display: inline-block;
+            width: 100%;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .testimonial-block > .testimonial {
+            display: inline-block;
+            /* width: 600px;
+            margin-left: calc(50% - 300px); */
+            font-size: 20px;
+            line-height: 30px;
+            margin: 30px 0;           
+        }
+    
+    .controls {
+        display: inline-block;
+        width: 100%;
+        text-align: center; 
     }
+        .controls > .control-1,
+        .controls > .control-2,
+        .controls > .control-3 {
+            display: inline-block;
+            width: 13px;
+            height: 6px;
+            border-radius: 3px;
+            background-color: #aaa;
+            cursor: pointer;
+        }
