@@ -4,7 +4,7 @@ class Header {
         this.DOM = null;
 
         this.init();
-        
+        this.scroll();
     }
 
     init() {
@@ -31,18 +31,18 @@ class Header {
                             ${itd.menu}
                         </a>`;
             } else {
-                HTML += `<a id="nava" href="#${itemID}">${itd.menu}</a>`;
+                HTML += `<a id="nava" class="white" href="#${itemID}">${itd.menu}</a>`;
             }
         }
         this.DOM.innerHTML = HTML;
-        this.scroll();
+        
     }
     
      scroll(){
                
         for( let x=0; x<nava.length; x++ ){
             let nav=nava[x];
-            console.log( nav);
+           
             window.addEventListener("scroll", ()=>{
                 if(window.scrollY < 80){
                     nav.classList.add('white')
@@ -57,8 +57,8 @@ class Header {
         window.addEventListener("scroll", ()=>{
            
             if (window.scrollY < 80) {
-                document.querySelector('header').classList.add('color')
-                document.querySelector('header').classList.remove('colorChange')
+                document.querySelector('#clr').classList.add('color')
+                document.querySelector('#clr').classList.remove('colorChange')
 
                 document.querySelector('#logo').classList.remove('logo-1');
                 document.querySelector('#logo').classList.add('logo-2');
