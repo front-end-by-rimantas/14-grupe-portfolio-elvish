@@ -33,8 +33,9 @@ class Achievements {
 
     scroll() {
         window.addEventListener('scroll', () => {
-            const height = this.DOMnumbers[0].offsetTop - window.innerHeight;
-            if ( height < window.scrollY && !this.numbersAnimated ) {
+            const height = this.DOMnumbers[0].offsetTop + window.innerHeight;
+            if ( height+200 < window.scrollY && !this.numbersAnimated ) {
+
                 const totalTime = 3000;
                 const framesPerSecond = 24;
                 const framesCount = (totalTime / 1000) * framesPerSecond;
@@ -51,7 +52,7 @@ class Achievements {
                 }, 1000 / framesPerSecond);
 
                 this.numbersAnimated = true;
-                
+
             }
         })
     }
