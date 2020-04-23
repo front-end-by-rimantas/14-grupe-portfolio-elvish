@@ -42,7 +42,6 @@ class Header {
                
         for( let x=0; x<nava.length; x++ ){
             let nav=nava[x];
-           
             window.addEventListener("scroll", ()=>{
                 if(window.scrollY < 80){
                     nav.classList.add('white')
