@@ -4,7 +4,7 @@ class Header {
         this.DOM = null;
 
         this.init();
-        this.scroll();
+        
     }
 
     init() {
@@ -22,6 +22,7 @@ class Header {
     
         let HTML = '';
         for ( let i=0; i<items.length; i++ ) {
+            
             const it = items[i];
             const itd = it.dataset;
             const itemID = it.getAttribute('id');
@@ -34,11 +35,16 @@ class Header {
             }
         }
         this.DOM.innerHTML = HTML;
+        this.scroll();
     }
     
      scroll(){
         const logo = document.querySelector('#logo');
-        console.log(logo)
+
+        for( let x=0; x<logo.length; x++ ){
+            console.log(logo[x])
+        }
+        
         window.addEventListener("scroll", ()=>{
            
             if (window.scrollY < 80) {
@@ -60,9 +66,9 @@ class Header {
 
                 logo.classList.remove('logo-2');
                 logo.classList.add('logo-1');
-                
-            }})
-        }
+            }
+        })
+    }
 }
 
 export default Header;
