@@ -7,9 +7,9 @@
    }
    
    
-    h2 {
+    .section-heading {
        display: inline-block;
-       margin-bottom: 50px;
+       margin-bottom: 30px;
        font-size: 36px;
        line-height: 36px;
        text-align: center;
@@ -28,7 +28,7 @@
     }
         .main-title-border:before {
                 display: inline-block;
-                margin-top: -60px;
+                margin-top: -5px;
                 vertical-align: middle;
                 content: "";
                 background-color: #d0d0d0;
@@ -38,7 +38,7 @@
         }
         .main-title-border:after {
                 display: inline-block;
-                margin-top: -60px;
+                margin-top: -5px;
                 vertical-align: middle;
                 content: "";
                 background-color: #d0d0d0;
@@ -46,12 +46,20 @@
                 height: 1px;
         }
 
-            .main-title-border i {
+            .main-title-border i.fa.fa-asterisk {
+                display: inline-block;
                 font-size: 20px;
                 margin-top: -28px;
+                margin-bottom: 10px;
                 font-weight: lighter;
             }
-p{
+
+            .fa-asterisk {
+                display: inline-block;
+                margin-top: 20px;
+            }
+
+p{ 
     display: inline-block;
     width: 100%;
     margin-bottom: 60px;
