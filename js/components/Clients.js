@@ -78,11 +78,24 @@ class Clients {
         this.DOMcontrols.innerHTML = HTML;
 
         const DOMctr = this.DOMcontrols.querySelectorAll('.ctr');
-        //arrows.forEach( arrow => arrow.addEventListener('click', updateTestimonials) );
         DOMctr.forEach( ctr => ctr.addEventListener('click', () => {
             this.DOMcontrols.querySelector('.ctr.active').classList.remove('active');
             ctr.classList.add('active');
+
+            const clickedCtr = this.DOMcontrols.querySelector('.ctr.active');
+            console.log(clickedCtr);
+                if (clickedCtr.classList.contains('control-1')) {
+                    this.DOMtestimonials.style.marginLeft = '0';
+                }
+                if (clickedCtr.classList.contains('control-2')) {
+                    this.DOMtestimonials.style.marginLeft = '-100%';
+                }
+                if (clickedCtr.classList.contains('control-3')) {
+                        this.DOMtestimonials.style.marginLeft = '-200%';
+                }
+
         }));
+        
         
         // aktyvus vidurinis control
         // this.DOMactiveControl = document.querySelector('.control-'+ (this.middleIndex+1));        

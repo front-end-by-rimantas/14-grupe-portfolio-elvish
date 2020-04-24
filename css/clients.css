@@ -11,7 +11,7 @@
     .testimonials-list {
         display: inline-block;        
         width: 300%;
-        /* margin-left: -100%;         */
+        transition: all 1s;
     }    
     .testimonials-list > .testimonial-block {
             display: inline-block;
