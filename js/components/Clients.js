@@ -57,25 +57,41 @@ class Clients {
         }
         this.DOMtestimonials.innerHTML = HTML;
 
-        this.DOMcurrentClient = document.querySelector('.testimonials-list');
-        this.DOMcurrentClient.style.marginLeft = '-100%';
+        // rodomas vidurinis testimonial
+        this.DOMtestimonials.style.marginLeft = '-100%';
     }
 
     renderControls() {
         let HTML ='';
         
         for(let t=0; t<data.length; t++) {
-            
-            HTML += `<div class="control-${t+1}">
+            if (t===this.middleIndex) {
+                HTML += `<div class="ctr control-${t+1} active">
                         <span></span>
                     </div>`;
+            } else{
+                HTML += `<div class="ctr control-${t+1}">
+                        <span></span>
+                    </div>`;
+            }
         }
-                
-        //control-${middleIndex+1}.classList.add("active");
-
         this.DOMcontrols.innerHTML = HTML;
-        this.DOMactiveControl = document.querySelector('.control-'+ (this.middleIndex+1));        
-        this.DOMactiveControl.classList.add("active");
+
+        const DOMctr = this.DOMcontrols.querySelectorAll('.ctr');
+        //arrows.forEach( arrow => arrow.addEventListener('click', updateTestimonials) );
+        DOMctr.forEach( ctr => ctr.addEventListener('click', () => {
+            this.DOMcontrols.querySelector('.ctr.active').classList.remove('active');
+            ctr.classList.add('active');
+        }));
+        
+        // aktyvus vidurinis control
+        // this.DOMactiveControl = document.querySelector('.control-'+ (this.middleIndex+1));        
+        // this.DOMactiveControl.classList.add("active");
     }
 }
 export default Clients;
+
+// .slide {
+//     transform: translate(-100%, 0);
+//     transition: transform 1s linear;
+// }
