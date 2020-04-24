@@ -82,13 +82,13 @@ class Header {
         const sectoins = document.querySelectorAll('.height ');
         let height='[]';
         for( let a=0; a<sectoins.length; a++ ){ 
-          height=sectoins[a].offsetTop + window.innerHeight;
-          sectoins[a].style.height=height;
-
+            let temp=sectoins[a].offsetTop + window.innerHeight;
+            sectoins[a].style.height=temp;
+           height.push(temp);
         }
-        console.log (height)
+        console.log(height)
         window.addEventListener('scroll', () => {
-        
+            //let temp=sectoins[a].offsetTop + window.innerHeight;
         })
     }
 }
