@@ -4,49 +4,74 @@
 }
     #clients p {
         color: var(--dark-color-anti);
-    }    
-    .testimonial-block {
-        display: inline-block;
-        text-align: center;
-    }        
-        .testimonial-block > .fa {
-            font-size: 60px;
-            margin-bottom: 25px;
-            font-weight: lighter;
-        }
-        .testimonial-block > .client {
-            display: inline-block;
-            width: 100%;
-            font-size: 22px;
-            line-height: 28px;
-        }
-        .testimonial-block > .company {
-            display: inline-block;
-            width: 100%;
-            font-size: 18px;
-            line-height: 24px;
-        }
-        .testimonial-block > .testimonial {
-            display: inline-block;
-            /* width: 600px;
-            margin-left: calc(50% - 300px); */
-            font-size: 20px;
-            line-height: 30px;
-            margin: 30px 0;           
-        }
-    
-    .controls {
-        display: inline-block;
-        width: 100%;
-        text-align: center; 
     }
-        .controls > .control-1,
-        .controls > .control-2,
-        .controls > .control-3 {
+    #clients > .row:nth-child(3) > .col-12 {
+        overflow: hidden;
+    }
+    .testimonials-list {
+        display: inline-block;        
+        width: 300%;
+        /* margin-left: -100%;         */
+    }    
+    .testimonials-list > .testimonial-block {
             display: inline-block;
-            width: 13px;
-            height: 6px;
-            border-radius: 3px;
-            background-color: #aaa;
-            cursor: pointer;
+            width: calc(100% / 3);
+            float: left;
+            text-align: center;
+        }        
+        .testimonials-list > .testimonial-block > .fa {
+                font-size: 60px;
+                margin-bottom: 25px;
+                font-weight: lighter;
+            }
+            .testimonials-list > .testimonial-block > .client {
+                display: inline-block;
+                width: 100%;
+                font-size: 22px;
+                line-height: 28px;
+            }
+            .testimonials-list > .testimonial-block > .company {
+                display: inline-block;
+                width: 100%;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .testimonials-list > .testimonial-block > .testimonial {
+                display: inline-block;
+                width: 60%;
+                margin: 0 20%;
+                font-size: 20px;
+                line-height: 30px;
+                margin: 30px 0;           
+            }
+        
+            .controls {
+            display: inline-block;
+            width: 100%;        
+            text-align: center; 
         }
+            .controls > * {
+                display: inline-block;
+                padding: 4px;
+                cursor: pointer;
+            }
+                .controls > .control-1 > span,
+                .controls > .control-2 > span,
+                .controls > .control-3 > span {
+                    display: block;
+                    width: 13px;
+                    height: 6px;
+                    border-radius: 3px;
+                    background-color: #aaa;
+                    transition: all 0.5s;
+                }
+                    .control-1:hover > span, 
+                    .control-2:hover > span, 
+                    .control-3:hover > span {
+                        /* transition: 0.5s; */
+                        background-color: #fff;
+                    }
+                    .controls .active > span {
+                        width: 20px;
+                        background-color: #fff;
+                    }
