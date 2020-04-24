@@ -54,10 +54,7 @@
                 display: inline-block;
                 padding: 8px 4px;
                 cursor: pointer;
-            }
-                /* .controls > .control-1 > span,
-                .controls > .control-2 > span,
-                .controls > .control-3 > span { */
+            }             
                 .controls > .ctr > * { 
                     display: block;
                     width: 13px;
@@ -65,12 +62,8 @@
                     border-radius: 3px;
                     background-color: #aaa;
                     transition: all 0.5s;
-                }
-                    /* .control-1:hover > span, 
-                    .control-2:hover > span, 
-                    .control-3:hover > span { */
-                    .ctr:hover > span {    
-                        /* transition: 0.5s; */
+                }                  
+                    .ctr:hover > span {  
                         background-color: #fff;
                     }
                     .controls .active > span {

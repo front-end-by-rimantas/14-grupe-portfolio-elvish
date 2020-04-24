@@ -65,6 +65,7 @@ class Clients {
         let HTML ='';
         
         for(let t=0; t<data.length; t++) {
+            //aktyvus vidurinis control
             if (t===this.middleIndex) {
                 HTML += `<div class="ctr control-${t+1} active">
                         <span></span>
@@ -83,7 +84,6 @@ class Clients {
             ctr.classList.add('active');
 
             const clickedCtr = this.DOMcontrols.querySelector('.ctr.active');
-            console.log(clickedCtr);
                 if (clickedCtr.classList.contains('control-1')) {
                     this.DOMtestimonials.style.marginLeft = '0';
                 }
@@ -93,18 +93,7 @@ class Clients {
                 if (clickedCtr.classList.contains('control-3')) {
                         this.DOMtestimonials.style.marginLeft = '-200%';
                 }
-
-        }));
-        
-        
-        // aktyvus vidurinis control
-        // this.DOMactiveControl = document.querySelector('.control-'+ (this.middleIndex+1));        
-        // this.DOMactiveControl.classList.add("active");
+        }));             
     }
 }
 export default Clients;
-
-// .slide {
-//     transform: translate(-100%, 0);
-//     transition: transform 1s linear;
-// }
