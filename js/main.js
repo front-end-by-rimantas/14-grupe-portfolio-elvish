@@ -8,6 +8,7 @@ import SectionHeading from './components/SectionHeading.js';
 import Achievements from './components/Achievements.js';
 import Experience from './components/Experience.js';
 import Portfolio from './components/Portfolio.js';
+
 import Blog from './components/Blog.js';
 
 //------hedre
