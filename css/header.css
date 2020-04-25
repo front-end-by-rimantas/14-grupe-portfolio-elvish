@@ -73,7 +73,7 @@ header nav .active::before{
     width: 5px;
     background: #333333;
     border-radius: 50%;
-    right: 50%;
+    left: 50%;
 }
 .hamburger {
     display: none;
@@ -112,15 +112,18 @@ header nav {
 
 @media (max-width: 1100px) {
     header nav .white{
-        margin-left: 10px;
         float: left;
+        text-align: left;
         display: inline-block;
-        line-height: 50px;
+        padding: 0;
+        line-height: 60px;
         font-size: 17px;
         color: white;
+        width: 100%;
     }
     header nav .black {
-        margin-left: 10px;
+        float: left;
+        text-align: left;
         color: black;
         display: inline-block;
         line-height: 50px;
@@ -155,7 +158,6 @@ header nav {
     header nav.show {
         display: inline-block;
         width: 100%;
-        text-align: center;
     }
         header nav > a {
             width: 100%;
@@ -164,16 +166,7 @@ header nav {
             overflow: hidden;
         }
         header nav.show > a {
-            height: 40px;
-            animation: expand 1s linear 0s 1 alternate forwards;
+            height:50px;
+            margin-left: 0;
         }
-}
-
-@keyframes expand {
-    0% {
-        height: 0;
-    }
-    100% {
-        height: 50px;
-    }
 }

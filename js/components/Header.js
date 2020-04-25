@@ -87,7 +87,6 @@ class Header {
 
             let linksArray=[];
             
-            
             for( let n=0; n<links.length; n++ ){
                 const link = links[n];
                 const href = link.href;
@@ -103,34 +102,23 @@ class Header {
                 const link = linksArray[a];
                 const section = document.querySelector(link);
                 sectionsHeight.push(section.offsetTop);
-                // console.log(sectionsHeight)
             }
+
             let goodSection = 0;
+
             for(let c=0; c<sectionsHeight.length; c++){
                 const sectionH = sectionsHeight[c];
-                //console.log(goodSection)
                 if(sectionH < height){
                     goodSection = c;
                 } else {
                     break;
                 }
             }
-           // console.log(height)
-            document.querySelector(`header nav a[href="${linksArray[goodSection]}"]`).classList.add('active');
 
-            const points =  document.querySelector('nav a');
-            for(let i=0; i<sectionsHeight.length; i++){
-                //console.log(points)
-                if(height < sectionsHeight[i] ){
-                    //console.log(height)
-                    for(let i=0; i<points.length; i++){
-                        point=points[i];
-                        point.classList.remove('active');
-                    }
-                } else {
-                    break;
-                }
+            for(let i=0; i<linksArray.length; i++){
+                document.querySelector(`header nav a[href="${linksArray[i]}"]`).classList.remove('active');
             }
+            document.querySelector(`header nav a[href="${linksArray[goodSection]}"]`).classList.add('active');
         })
     }
 }
