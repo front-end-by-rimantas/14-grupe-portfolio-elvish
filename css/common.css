@@ -16,35 +16,49 @@
        position: relative;
        font-weight: 400;
    }
+
+.bg-light {
+    background-color: var(--light-color);
+}
    
-    .bold {        
-        font-weight: bold;
-    }
+h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+}
 
-    .main-title {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }
-        .main-title-border:before {
-                display: inline-block;
-                margin-top: -5px;
-                vertical-align: middle;
-                content: "";
-                background-color: #d0d0d0;
-                width: 30px;
-                height: 1px;
+.bold {        
+    font-weight: bold;
+}
 
-        }
-        .main-title-border:after {
-                display: inline-block;
-                margin-top: -5px;
-                vertical-align: middle;
-                content: "";
-                background-color: #d0d0d0;
-                width: 30px;
-                height: 1px;
-        }
+.main-title {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+    .main-title-border:before {
+            display: inline-block;
+            margin-top: -7px;
+            vertical-align: middle;
+            content: "";
+            background-color: #d0d0d0;
+            width: 30px;
+            height: 1px;
+    }
+     .main-title-border:after {
+            display: inline-block;
+            margin-top: -7px;
+            vertical-align: middle;
+            content: "";
+            background-color: #d0d0d0;
+            width: 30px;
+            height: 1px;
+    } 
+
 
             .main-title-border i.fa.fa-asterisk {
                 display: inline-block;
@@ -54,14 +68,14 @@
                 font-weight: lighter;
             }
 
-p{ 
+ 
+p{
     display: inline-block;
     width: 100%;
+    margin-top: 20px;
     margin-bottom: 60px;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     color: var(--light-color-anti);
-}
-
- 
+} 

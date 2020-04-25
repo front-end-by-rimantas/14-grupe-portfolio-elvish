@@ -8,6 +8,7 @@ import SectionHeading from './components/SectionHeading.js';
 import Achievements from './components/Achievements.js';
 import Experience from './components/Experience.js';
 import Portfolio from './components/Portfolio.js';
+import Clients from './components/Clients.js';
 
 
 //------hedre
@@ -51,4 +52,4 @@ new Achievements('#achievements > .row');
 new Experience ('#experience .row:nth-child(3)');
 new GreatPeple ('.greatp','.greatimg')
 new Portfolio ('#portfolio > .row:nth-child(3) > .col-12');
-
+new Clients ('#clients > .row:nth-child(3) > .col-12');

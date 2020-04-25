@@ -1,0 +1,72 @@
+#clients.container {
+    background: var(--background-color);
+    position: relative;
+}
+    #clients p {
+        color: var(--dark-color-anti);
+    }
+    #clients > .row:nth-child(3) > .col-12 {
+        overflow: hidden;
+    }
+    .testimonials-list {
+        display: inline-block;        
+        width: 300%;
+        transition: all 1s;
+    }    
+    .testimonials-list > .testimonial-block {
+            display: inline-block;
+            width: calc(100% / 3);
+            float: left;
+            text-align: center;
+        }        
+        .testimonials-list > .testimonial-block > .fa {
+                font-size: 60px;
+                margin-bottom: 25px;
+                font-weight: lighter;
+            }
+            .testimonials-list > .testimonial-block > .client {
+                display: inline-block;
+                width: 100%;
+                font-size: 22px;
+                line-height: 28px;
+            }
+            .testimonials-list > .testimonial-block > .company {
+                display: inline-block;
+                width: 100%;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .testimonials-list > .testimonial-block > .testimonial {
+                display: inline-block;
+                width: 60%;
+                margin: 0 20%;
+                font-size: 20px;
+                line-height: 30px;
+                margin: 30px 0;           
+            }
+        
+            .controls {
+            display: inline-block;
+            width: 100%;        
+            text-align: center; 
+        }
+            .controls > * {
+                display: inline-block;
+                padding: 8px 4px;
+                cursor: pointer;
+            }             
+                .controls > .ctr > * { 
+                    display: block;
+                    width: 13px;
+                    height: 6px;
+                    border-radius: 3px;
+                    background-color: #aaa;
+                    transition: all 0.5s;
+                }                  
+                    .ctr:hover > span {  
+                        background-color: #fff;
+                    }
+                    .controls .active > span {
+                        width: 20px;
+                        background-color: #fff;
+                    }
