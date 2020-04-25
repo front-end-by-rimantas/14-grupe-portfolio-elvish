@@ -5,6 +5,8 @@ const data = [
         photo: './img/Services/1.png',
         name: 'Graphic Design',
         par: 'It is a long established fact that a reader will be distracted by the  readable content of a page when looking at its layout.',
+        parLong:'It is a long established fact that a reader will be distracted by the\
+        readable content of a page when looking at its layout.'   
     },
     {
         photo: './img/Services/2.png',
