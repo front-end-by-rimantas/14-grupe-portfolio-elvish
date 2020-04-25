@@ -9,8 +9,6 @@ import Achievements from './components/Achievements.js';
 import Experience from './components/Experience.js';
 import Portfolio from './components/Portfolio.js';
 import Clients from './components/Clients.js';
-
-import Clients from './components/Clients.js';
 import Blog from './components/Blog.js';
 
 

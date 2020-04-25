@@ -2,7 +2,9 @@
 
 const data = [
     {
-        media: 'blog-1.jpg',
+        media: { 
+            images: 'blog-1.jpg'
+        },
         title: 'There are many variations',
         category: 'Lifestyle',
         date: '13 February 2018',
@@ -12,7 +14,9 @@ const data = [
         readmore: 'Read More...' 
     },
     {
-        media: 'blog-2.jpg',
+        media: { 
+            video: 'mov.mp4'
+        },
         title: 'Contrary to popular belief',
         category: 'Travel',
         date: '13 February 2018',
@@ -34,3 +38,4 @@ const data = [
 ];
 
 export default data;
+console.log(data);
