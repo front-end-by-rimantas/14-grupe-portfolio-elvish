@@ -42,7 +42,7 @@ class Header {
         this.pionts()
     }
     
-     scroll(){
+    scroll(){
          
         for( let x=0; x<nava.length; x++ ){
             let nav=nava[x];
@@ -76,19 +76,29 @@ class Header {
             }
         
         })
-     }
-     pionts(){
-         //sectoins[a](.xxx) = value- masyvas for
-        const sectoins = document.querySelectorAll('.height ');
-        let height='[]';
+    }
+        pionts(){
+       
+        const sectoins = document.querySelectorAll('[data-menu]');
+        const links = document.querySelectorAll('nav > a');
+
+        let height=[];
+        
+        
+        for( let n=0; n<links.length; n++ ){
+            let link = links[n];
+            console.log(link)
+        }
+
+
         for( let a=0; a<sectoins.length; a++ ){ 
             let temp=sectoins[a].offsetTop + window.innerHeight;
             sectoins[a].style.height=temp;
-           height.push(temp);
+            height.push(temp);
         }
-        console.log(height)
+        //console.log(height)
         window.addEventListener('scroll', () => {
-            //let temp=sectoins[a].offsetTop + window.innerHeight;
+         
         })
     }
 }
