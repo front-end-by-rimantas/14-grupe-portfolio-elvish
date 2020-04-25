@@ -34,7 +34,7 @@ class Header {
                             ${itd.menu}
                         </a>`;
             } else {
-                HTML += `<a id="nava" class="white" href="#${itemID}">${itd.menu}</a>`;
+                HTML += `<a id="nava" class=" white" href="#${itemID}">${itd.menu}</a>`;
             }
         }
         this.DOM.innerHTML = HTML;
@@ -42,7 +42,7 @@ class Header {
         this.pionts()
     }
     
-     scroll(){
+    scroll(){
          
         for( let x=0; x<nava.length; x++ ){
             let nav=nava[x];
@@ -76,21 +76,60 @@ class Header {
             }
         
         })
-     }
-     pionts(){
-         //sectoins[a](.xxx) = value- masyvas for
-        const sectoins = document.querySelectorAll('.height ');
-        let height='[]';
-        for( let a=0; a<sectoins.length; a++ ){ 
-            let temp=sectoins[a].offsetTop + window.innerHeight;
-            sectoins[a].style.height=temp;
-           height.push(temp);
-        }
-        console.log(height)
+    }
+    pionts(){
         window.addEventListener('scroll', () => {
-            //let temp=sectoins[a].offsetTop + window.innerHeight;
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const height = window.scrollY + headerHeight;
+        
+            const sectoins = document.querySelectorAll('[data-menu]');
+            const links = document.querySelectorAll('nav > a');
+
+            let linksArray=[];
+            
+            for( let n=0; n<links.length; n++ ){
+                const link = links[n];
+                const href = link.href;
+                const split = href.split('#');
+
+                linksArray.push('#' + split[1]);
+                
+            }
+
+            let sectionsHeight = [];
+            
+            for( let a=0; a<linksArray.length; a++ ){
+                const link = linksArray[a];
+                const section = document.querySelector(link);
+                sectionsHeight.push(section.offsetTop);
+            }
+
+            let goodSection = 0;
+
+            for(let c=0; c<sectionsHeight.length; c++){
+                const sectionH = sectionsHeight[c];
+                if(sectionH < height){
+                    goodSection = c;
+                } else {
+                    break;
+                }
+            }
+
+            for(let i=0; i<linksArray.length; i++){
+                document.querySelector(`header nav a[href="${linksArray[i]}"]`).classList.remove('active');
+            }
+            document.querySelector(`header nav a[href="${linksArray[goodSection]}"]`).classList.add('active');
         })
     }
 }
 
 export default Header;
+
+//sekcijos aukstis masyve
+
+      /*  for( let a=0; a<sectoins.length; a++ ){ 
+            let temp=sectoins[a].offsetTop + window.innerHeight;
+            sectoins[a].style.height=temp;
+            height.push(temp);
+        }
+       console.log(height)*/
