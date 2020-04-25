@@ -30,4 +30,27 @@
                 left: 0;
                 bottom: 0;
                 right: 0;
-            }    
+            }  
+.back-to-top {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    background-color: #000;
+    text-align: center;
+    border-radius: 4px;
+    transition: all 0.5s
+} 
+    .back-to-top.top {
+        display: none;
+    }
+    .back-to-top .fa {
+        display: inline-block;
+        width: 100%;
+        font-size: 22px;
+        line-height: 32px;
+        color: #fff;
+        font-weight: lighter;
+    }
