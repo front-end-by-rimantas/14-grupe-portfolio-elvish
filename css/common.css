@@ -1,64 +1,62 @@
 .bg-main {
     background-color: var(--dark-color);
     color: var(--dark-color-anti);
-   }
-   .bg-light {
-       background-color: var(--light-color);
-   }
+}
+.bg-light {
+    background-color: var(--light-color);
+}
    
-   
-    h2 {
-       display: inline-block;
-       margin-bottom: 50px;
-       font-size: 36px;
-       line-height: 36px;
-       text-align: center;
-       position: relative;
-       font-weight: 400;
-   }
-   
-    .bold {        
-        font-weight: bold;
+h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+}
+
+.bold {        
+    font-weight: bold;
+}
+
+.main-title {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+    .main-title-border:before {
+            display: inline-block;
+            margin-top: -7px;
+            vertical-align: middle;
+            content: "";
+            background-color: #d0d0d0;
+            width: 30px;
+            height: 1px;
+    }
+    .main-title-border:after {
+            display: inline-block;
+            margin-top: -7px;
+            vertical-align: middle;
+            content: "";
+            background-color: #d0d0d0;
+            width: 30px;
+            height: 1px;
     }
 
-    .main-title {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }
-        .main-title-border:before {
-                display: inline-block;
-                margin-top: -60px;
-                vertical-align: middle;
-                content: "";
-                background-color: #d0d0d0;
-                width: 30px;
-                height: 1px;
-
+        .main-title-border i {
+            font-size: 20px;
+            margin-top: 0;
+            margin-left: 5px;
+            font-weight: lighter;
         }
-        .main-title-border:after {
-                display: inline-block;
-                margin-top: -60px;
-                vertical-align: middle;
-                content: "";
-                background-color: #d0d0d0;
-                width: 30px;
-                height: 1px;
-        }
-
-            .main-title-border i {
-                font-size: 20px;
-                margin-top: -28px;
-                font-weight: lighter;
-            }
 p{
     display: inline-block;
     width: 100%;
+    margin-top: 20px;
     margin-bottom: 60px;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     color: var(--light-color-anti);
-}
-
- 
+} 
