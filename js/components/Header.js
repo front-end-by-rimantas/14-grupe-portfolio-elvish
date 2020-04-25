@@ -82,24 +82,42 @@ class Header {
         const sectoins = document.querySelectorAll('[data-menu]');
         const links = document.querySelectorAll('nav > a');
 
-        let height=[];
+       // let height=[];
+        let linksArray=[];
         
         
         for( let n=0; n<links.length; n++ ){
-            let link = links[n];
-            console.log(link)
+            const link = links[n];
+            const href = link.href;
+            const split = href.split('#');
+
+            linksArray.push('#' + split[1]);
         }
 
+        let sectionsHeight = [];
+        console.log(linksArray)
+        for( let a=0; a<linksArray.length; a++ ){
+            const link = linksArray[a];
+            const section = document.querySelector(link);
+            sectionsHeight.push(section.offsetTop);
+           
+        }
+        let goodSection = 0;
+        for(let c=0; c<sectionsHeight.length; c++){
+            const sectionH = sectionsHeight[c];
+            console.log(sectionH)
+           if
+        }
 
-        for( let a=0; a<sectoins.length; a++ ){ 
+      /*  for( let a=0; a<sectoins.length; a++ ){ 
             let temp=sectoins[a].offsetTop + window.innerHeight;
             sectoins[a].style.height=temp;
             height.push(temp);
         }
-        //console.log(height)
+       console.log(height)
         window.addEventListener('scroll', () => {
          
-        })
+        })*/
     }
 }
 
