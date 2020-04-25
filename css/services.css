@@ -28,6 +28,7 @@ grid-gap: 20px;
         padding: 40px 0 0px;
     }
     #services .col-4 p{
+        width: 98%;
        margin-top: 30px;
         text-align: center;
       
