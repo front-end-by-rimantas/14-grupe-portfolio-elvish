@@ -1,7 +1,6 @@
 "use strict";
-// import Services from './components/Services.js';
+import Services from './components/Services.js';
 import Header from './components/Header.js';
-import aboutData from './data/AboutMe-data.js';
 import {ProgressBarX3,AboutAs} from './components/about.js';
 import GreatPeple from './components/greatPeple.js'
 import SectionHeading from './components/SectionHeading.js';
@@ -52,3 +51,4 @@ new Experience ('#experience .row:nth-child(3)');
 new GreatPeple ('.greatp','.greatimg')
 new Portfolio ('#portfolio > .row:nth-child(3) > .col-12');
 
+new Services ('.ServTabl');
