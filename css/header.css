@@ -50,7 +50,7 @@ nav > .white:hover:after {
     position: absolute;
     bottom: 10%;
     height: 6px;
-    width: 6px;
+    width: 5px;
     background: #fff;
     border-radius: 50%;
     left: 50%;
@@ -60,10 +60,20 @@ nav > .black:hover:after {
     position: absolute;
     bottom: 10%;
     height: 6px;
-    width: 6px;
+    width: 5px;
     background: #333333;
     border-radius: 50%;
     left: 50%;
+}
+header nav .active::before{
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    height: 6px;
+    width: 5px;
+    background: #333333;
+    border-radius: 50%;
+    right: 50%;
 }
 .hamburger {
     display: none;

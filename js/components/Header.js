@@ -77,47 +77,60 @@ class Header {
         
         })
     }
-        pionts(){
-            window.addEventListener('scroll', () => {
-                const headerHeight = document.querySelector('.hero').offsetHeight;
-                const height = window.scrollY + headerHeight;
+    pionts(){
+        window.addEventListener('scroll', () => {
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const height = window.scrollY + headerHeight;
+        
+            const sectoins = document.querySelectorAll('[data-menu]');
+            const links = document.querySelectorAll('nav > a');
+
+            let linksArray=[];
             
-                const sectoins = document.querySelectorAll('[data-menu]');
-                const links = document.querySelectorAll('nav > a');
+            
+            for( let n=0; n<links.length; n++ ){
+                const link = links[n];
+                const href = link.href;
+                const split = href.split('#');
 
-                let linksArray=[];
+                linksArray.push('#' + split[1]);
                 
-                
-                for( let n=0; n<links.length; n++ ){
-                    const link = links[n];
-                    const href = link.href;
-                    const split = href.split('#');
+            }
 
-                    linksArray.push('#' + split[1]);
+            let sectionsHeight = [];
+            
+            for( let a=0; a<linksArray.length; a++ ){
+                const link = linksArray[a];
+                const section = document.querySelector(link);
+                sectionsHeight.push(section.offsetTop);
+                // console.log(sectionsHeight)
+            }
+            let goodSection = 0;
+            for(let c=0; c<sectionsHeight.length; c++){
+                const sectionH = sectionsHeight[c];
+                //console.log(goodSection)
+                if(sectionH < height){
+                    goodSection = c;
+                } else {
+                    break;
                 }
+            }
+           // console.log(height)
+            document.querySelector(`header nav a[href="${linksArray[goodSection]}"]`).classList.add('active');
 
-                let sectionsHeight = [];
-                console.log(height+'-')
-                for( let a=0; a<linksArray.length; a++ ){
-                    const link = linksArray[a];
-                    const section = document.querySelector(link);
-                    sectionsHeight.push(section.offsetTop);
-                
-                }
-                let goodSection = 0;
-                for(let c=0; c<sectionsHeight.length; c++){
-                    const sectionH = sectionsHeight[c];
-                    
-                    if(sectionH <= height){
-                        goodSection = c;
-                    } else {
-                        break;
+            const points =  document.querySelector('nav a');
+            for(let i=0; i<sectionsHeight.length; i++){
+                //console.log(points)
+                if(height < sectionsHeight[i] ){
+                    //console.log(height)
+                    for(let i=0; i<points.length; i++){
+                        point=points[i];
+                        point.classList.remove('active');
                     }
-                   
+                } else {
+                    break;
                 }
-                console.log(links[goodSection])
-                //document.querySelector(`header nav > a[href="${links[goodSection]}"]`).classList.add('active');
-                document.querySelector('nav > #nava').classList.add('active');
+            }
         })
     }
 }
