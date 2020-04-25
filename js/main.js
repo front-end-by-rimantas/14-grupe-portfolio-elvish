@@ -1,9 +1,10 @@
 "use strict";
 
 import Header from './components/Header.js';
+import Hero from './components/Hero.js';
 import aboutData from './data/AboutMe-data.js';
 import {ProgressBarX3,AboutAs} from './components/about.js';
-import GreatPeple from './components/greatPeple.js'
+import GreatPeple from './components/greatPeple.js';
 import SectionHeading from './components/SectionHeading.js';
 import Achievements from './components/Achievements.js';
 import Experience from './components/Experience.js';
@@ -45,7 +46,7 @@ const allDataH2 = document.querySelectorAll('[data-h2],[data-h2-bold],[data-plac
 for ( let i=0; i<allDataH2.length; i++ ) {
     new SectionHeading( allDataH2[i] );
 } 
-//create four achievements blocks
+new Hero('#hero h1');
 new Achievements('#achievements > .row');
 new Experience ('#experience .row:nth-child(3)');
 new GreatPeple ('.greatp','.greatimg')
