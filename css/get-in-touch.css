@@ -71,8 +71,8 @@ form {
     }
 
 
-        input,
-        textarea {
+        #Contact input,
+        #Contact textarea {
             display: inline-block;
             width: 100%;
             padding: 10px 10px;
@@ -83,7 +83,7 @@ form {
 
         }
 
-        textarea {
+        #Contact textarea {
             height: 100px;
         }
 
