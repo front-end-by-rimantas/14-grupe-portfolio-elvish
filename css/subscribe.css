@@ -1,0 +1,25 @@
+.subscribe-form {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.subscribe-form > textarea {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 25px;
+    font-size: 20px;
+    line-height: 36px;
+    padding: 5px 10px 5px 20px;
+    resize: none;
+    background-color: #eee;
+    border: none;
+}
+.subscribe-form > .btn.btn-rb {
+    position: absolute;
+    top: 19px;
+    right: 4px;
+    bottom: 4px;
+    height: 42px;
+}
