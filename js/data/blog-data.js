@@ -26,7 +26,9 @@ const data = [
         readmore: 'Read More...'  
     },
     {
-        media: ['blog-3.jpg', 'blog-4.jpg', 'blog-5.jpg'],
+        media: {
+            slideshow: ['blog-3.jpg', 'blog-4.jpg', 'blog-5.jpg']
+        },
         title: 'Lorem Ipsum is not simply',
         category: 'Food & Drinks',
         date: '13 February 2018',

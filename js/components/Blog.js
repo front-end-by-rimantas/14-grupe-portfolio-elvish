@@ -47,11 +47,11 @@ class Blog {
                             <a href="#" class="category">${post.category}</a>
                             <p class="date">${post.date} <a class="author">${post.author}</a></p>
                             <p class="description">${post.description}</p>
-                            <p class="read-more">${post.readmore}</p> 
+                            <a href="#" class="read-more">${post.readmore}</a> 
                         </div>`;
             }
             if (post.media.video)    {
-            HTML += `<div class="post col-4">
+                HTML += `<div class="post col-4">
                             
                             <div class="video">
                             <i class="fa fa-play-circle" aria-hidden="true"></i>
@@ -68,57 +68,98 @@ class Blog {
                           <a href="#" class="category">${post.category}</a>
                           <p class="date">${post.date} <a class="author">${post.author}</a></p>
                           <p class="description">${post.description}</p>
-                          <p class="read-more">${post.readmore}</p>
+                          <a href="#" class="read-more">${post.readmore}</a>
                       </div>`;
                               
+                    }
+            if(post.media.slideshow){
+                HTML += `<div class="post col-4">
+                            <div class="slideshow-container">
+                                <div class="mySlides fade">
+                                    <img src="../img/blog/${post.media.slideshow[0]}" style="width:100%">
+                                </div>
+                                <div class="mySlides fade">
+                                    <img src="../img/blog/${post.media.slideshow[1]}"" style="width:100%">
+                                </div>
+                                <div class="mySlides fade">
+                                    <img src="../img/blog/${post.media.slideshow[2]}"" style="width:100%">
+                                </div>
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                              </div>
+                              <br></br>
+                              
+                              <a href="#" class="title">${post.title}</a>
+                            <a href="#" class="category">${post.category}</a>
+                            <p class="date">${post.date} <a class="author">${post.author}</a></p>
+                            <p class="description">${post.description}</p>
+                            <a href="#" class="read-more">${post.readmore}</a>
+                            </div>`;
+
+
+
+
+                    }
+            }
+        
+                
+                  
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                
+                
+                this.DOM.innerHTML = HTML;
+                const modal = document.getElementById("myModal");
+                var span = document.getElementsByClassName("close")[0];
+                this.DOMplay = this.DOM.querySelector('.fa-play-circle');
+               
+                this.DOMplay.addEventListener('click', () => {
+                    modal.style.display = "block";
+        
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                      }
+        
+                      window.onclick = function(event) {
+                        if (event.target == modal) {
+                          modal.style.display = "none";
+                        }
+                      }
+                      var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+                    
+                })
+            }
+        
+        
+        
+        
+        }
+                                
+        
+        export default Blog;
+                
                                
                                 
                                 
                           
                             
                             
-            }
-            // if(){}
-    }
-
-        
-          
-          window.onclick = function(event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
-            }
-          }
-        
-        
-        this.DOM.innerHTML = HTML;
-        const modal = document.getElementById("myModal");
-        var span = document.getElementsByClassName("close")[0];
-        this.DOMplay = this.DOM.querySelector('.fa-play-circle');
-       
-        this.DOMplay.addEventListener('click', () => {
-            modal.style.display = "block";
-
-            span.onclick = function() {
-                modal.style.display = "none";
-              }
-
-              window.onclick = function(event) {
-                if (event.target == modal) {
-                  modal.style.display = "none";
-                }
-              }
-            
-        })
-    }
-
-
-
-
-}
-                        
-
-export default Blog;
-        
 
 
                             
