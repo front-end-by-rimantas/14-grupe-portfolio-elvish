@@ -137,7 +137,7 @@ header nav {
         color: black;
         float: left;
     }
-    header nav.show > a {
+    header .m-menu > a {
         height:50px;
         margin-left: 10px;
     }
