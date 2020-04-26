@@ -10,3 +10,48 @@
     left: 0;
     z-index: -1;
 }
+#freelancer.container {
+    background: var(--background-color);
+    position: relative;
+}
+    #freelancer .col-12 {
+        text-align: center;
+    }
+        #freelancer p {
+            color: var(--dark-color-anti);
+            font-size: 44px;
+        }
+        #freelancer .btn.btn-st {
+            position: relative;
+        }
+            #freelancer a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+            }  
+.back-to-top {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    background-color: #000;
+    text-align: center;
+    border-radius: 4px;
+    opacity: 1;
+    transition: all 0.5s
+} 
+    .back-to-top.top {
+        opacity: 0;
+    }
+    .back-to-top .fa {
+        display: inline-block;
+        width: 100%;
+        font-size: 22px;
+        line-height: 32px;
+        color: #fff;
+        font-weight: lighter;
+    }
