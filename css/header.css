@@ -45,6 +45,12 @@ header > .row .logo-1 {
     background-size: cover;
     float: left;
 }
+    header #logo a{
+        height: 100%;
+        width: 100%;
+        float: left;
+        background-color: transparent;
+    }
 nav > .white:hover:after {
     content: '';
     position: absolute;

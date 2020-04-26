@@ -19,20 +19,17 @@ class Hero{
     words(){
         const htext = document.querySelector('#text span');
         const names = ['Elvish Walters.', 'A Developer.', 'Designer.'];
-        cons
-        let counter = 0;
-        let sum = 0;
 
         let interval = 3000; 
-        names.forEach((names, index) => {
-            sum += counter;
-            
-        setTimeout(() => {
-            let text = `<span>${name}</span>`;
-            htext.innerHTML = text;
-            console.log(name)
-            if ( name === names[ names.length - 1 ] )
-                setTimeout( () => { this.words() }, interval );
+        names.forEach((name, index) => {
+                        
+            setTimeout(() => {
+                let text = `<span>${name}</span>`;
+                htext.innerHTML = text;
+
+                 console.log(names[ names.length - 1 ])
+                if ( name === names[ names.length - 1 ] )
+                    setTimeout( () => { this.words() }, interval );
 
             }, index * interval )
         })
@@ -41,14 +38,7 @@ class Hero{
 
 export default Hero;
 
-/*if (!htext.style.opacity) {
-    htext.style.opacity = 1;
- }
- if (htext.style.opacity > 0) {
-     htext.style.opacity -= 0.1;
- } else {
-     clearInterval(fadeEffect);
- }*/
+// isnykstasnis per zingsni
 
 /* if (!htext.style.opacity) {
     htext.style.opacity = 1;
