@@ -27,7 +27,6 @@ class Hero{
                 let text = `<span>${name}</span>`;
                 htext.innerHTML = text;
 
-                 console.log(names[ names.length - 1 ])
                 if ( name === names[ names.length - 1 ] )
                     setTimeout( () => { this.words() }, interval );
 
