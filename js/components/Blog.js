@@ -32,38 +32,41 @@ class Blog {
 
     render() {
         let HTML = '';
+        // const btn = document.querySelector('play-blue');
+
+        // btn.addEventListener('click', () => {});
 
         for (let i=0; i<data.length; i++) {
             const post = data[i];
-
-            console.log(post);
+            // <div class="play-blue"></div><div class="play"></div> 
             
-        if (post.media.images)    {
-        HTML += `<div class="post col-4">
-                        <img class="postmedia" src="../img/blog/${post.media.images}" alt="Post media">
-                        <a class="title">${post.title}</a>
-                        <a class="category">${post.category}</a>
-                        <p class="date">${post.date} <a class="author">${post.author}</a></p>
-                        <p class="description">${post.description}</p>
-                        <p class="read-more">${post.readmore}</p> 
-                    </div>`;
-        }
-        if (post.media.video)    {
-        HTML += `<div class="post col-4">
-                        <div class="play-blue"></div><div class="play"></div> <video class="postmedia video" width="325" height="220">
-                            <source src="../img/blog/${post.media.video}" type="video/mp4">
-                          
-                        
-                        </video>
-                        
-                        <a class="title">${post.title}</a>
-                        <a class="category">${post.category}</a>
-                        <p class="date">${post.date} <a class="author">${post.author}</a></p>
-                        <p class="description">${post.description}</p>
-                        <p class="read-more">${post.readmore}</p>
-                    </div>`;
-        }
+            if (post.media.images)    {
+            HTML += `<div class="post col-4">
+                            <img class="postmedia" src="../img/blog/${post.media.images}" alt="Post media">
+                            <a class="title">${post.title}</a>
+                            <a class="category">${post.category}</a>
+                            <p class="date">${post.date} <a class="author">${post.author}</a></p>
+                            <p class="description">${post.description}</p>
+                            <p class="read-more">${post.readmore}</p> 
+                        </div>`;
+            }
+            if (post.media.video)    {
+            HTML += `<div class="post col-4">
+                            
+                            <div class="video"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+                            <a class="title">${post.title}</a>
+                            <a class="category">${post.category}</a>
+                            <p class="date">${post.date} <a class="author">${post.author}</a></p>
+                            <p class="description">${post.description}</p>
+                            <p class="read-more">${post.readmore}</p>
+                        </div>`;
+                                
+                            
+                            
+            }
+            // if(){}
     }
+
         
         return this.DOM.innerHTML = HTML;
         
