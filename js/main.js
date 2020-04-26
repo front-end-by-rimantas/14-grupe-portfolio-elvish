@@ -1,7 +1,6 @@
 "use strict";
 
 import Header from './components/Header.js';
-import aboutData from './data/AboutMe-data.js';
 import {ProgressBarX3,AboutAs} from './components/about.js';
 import GreatPeple from './components/greatPeple.js';
 import SectionHeading from './components/SectionHeading.js';
@@ -12,7 +11,7 @@ import Clients from './components/Clients.js';
 import Blog from './components/Blog.js';
 
 
-//------hedre
+//------header
 
 new Header('header nav');
 
@@ -21,16 +20,6 @@ DOMhamburger.addEventListener('click', () => {
     document.querySelector('header nav').classList.toggle('show');
 })
 
-
-// ----------aboutME-----------
-const Development  = new ProgressBarX3("Development",'WordPress','Photoshop',80,59,88,".myProgress1",1);
-const Html  = new ProgressBarX3("Html",'Css','Asp.net',96,70,58,".myProgress2",4);
-const Aboutparferst = new AboutAs ('.titleShort');
-const AbotHello = new AboutAs ('.aboutH2_1');
-const Abotimg = new AboutAs ('.aboutimg_1');
-const aboutUx = new AboutAs ('.aboutMeh2_1');
-const aboutLong = new AboutAs ('.aboutPlomg_1');
- 
 // ----------aboutME-----------
 new ProgressBarX3("Development",'WordPress','Photoshop',80,59,88,".myProgress1",1);
 new ProgressBarX3("Html",'Css','Asp.net',96,70,58,".myProgress2",4);
@@ -46,10 +35,19 @@ const allDataH2 = document.querySelectorAll('[data-h2],[data-h2-bold],[data-plac
 for ( let i=0; i<allDataH2.length; i++ ) {
     new SectionHeading( allDataH2[i] );
 } 
-//create four achievements blocks
+
 new Achievements('#achievements > .row');
 new Experience ('#experience .row:nth-child(3)');
-new GreatPeple ('.greatp','.greatimg')
+new GreatPeple ('.greatp','.greatimg');
 new Portfolio ('#portfolio > .row:nth-child(3) > .col-12');
 new Clients ('#clients > .row:nth-child(3) > .col-12');
 new Blog ('#blog .row:nth-child(3)');
+
+//back-to-top component
+window.addEventListener("scroll", ()=>{    
+    if (window.scrollY > 80) {
+        document.querySelector('.back-to-top').classList.remove('top');
+    } else {
+        document.querySelector('.back-to-top').classList.add('top');
+    }
+});
