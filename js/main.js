@@ -1,6 +1,8 @@
 "use strict";
 import Services from './components/Services.js';
 import Header from './components/Header.js';
+import Hero from './components/Hero.js';
+import aboutData from './data/AboutMe-data.js';
 import {ProgressBarX3,AboutAs} from './components/about.js';
 import GreatPeple from './components/greatPeple.js';
 import SectionHeading from './components/SectionHeading.js';
@@ -35,6 +37,9 @@ for ( let i=0; i<allDataH2.length; i++ ) {
     new SectionHeading( allDataH2[i] );
 } 
 
+
+
+new Hero('#hero h1');
 new Achievements('#achievements > .row');
 new Experience ('#experience .row:nth-child(3)');
 new GreatPeple ('.greatp','.greatimg');

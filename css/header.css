@@ -45,6 +45,12 @@ header > .row .logo-1 {
     background-size: cover;
     float: left;
 }
+    header #logo a{
+        height: 100%;
+        width: 100%;
+        float: left;
+        background-color: transparent;
+    }
 nav > .white:hover:after {
     content: '';
     position: absolute;
@@ -114,12 +120,12 @@ header nav {
     header nav .white{
         float: left;
         text-align: left;
+        color: white;
         display: inline-block;
-        padding: 0;
-        line-height: 60px;
+        line-height: 50px;
         font-size: 17px;
         color: white;
-        width: 100%;
+        float: left;
     }
     header nav .black {
         float: left;
@@ -130,6 +136,10 @@ header nav {
         font-size: 17px;
         color: black;
         float: left;
+    }
+    header .m-menu > a {
+        height:50px;
+        margin-left: 10px;
     }
 }
 
