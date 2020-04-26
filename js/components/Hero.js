@@ -19,23 +19,22 @@ class Hero{
     words(){
         const htext = document.querySelector('#text span');
         const names = ['Elvish Walters.', 'A Developer.', 'Designer.'];
-
+        cons
         let counter = 0;
         let sum = 0;
 
         let interval = 3000; 
         names.forEach((names, index) => {
             sum += counter;
-            //console.log(sum)
-        setTimeout(() => {
-           
- 
-            let text = `<span>${names}</span>`;
-            htext.innerHTML = text;
-            this.words()
-        }, index * interval    )
             
-           
+        setTimeout(() => {
+            let text = `<span>${name}</span>`;
+            htext.innerHTML = text;
+            console.log(name)
+            if ( name === names[ names.length - 1 ] )
+                setTimeout( () => { this.words() }, interval );
+
+            }, index * interval )
         })
     }
 }
@@ -60,3 +59,20 @@ export default Hero;
     } else {
         clearInterval(htext);
     }*/
+ 
+   // 
+
+          /* names.forEach((names, index) => {
+            sum += counter;
+            //console.log(sum)
+           setTimeout(() => {
+            let text = <span>${name}</span>;
+            htext.innerHTML = text;
+
+            if ( name === names[ names.length - 1 ] )
+                setTimeout( () => { this.words() }, interval );
+
+        }, index * interval )
+            
+           
+        })*/
