@@ -6,6 +6,7 @@ class Blog {
     constructor(target) {
         this.target = target;
         this.DOM = null;
+        this.DOMplay = null;
 
         this.init();
     }
@@ -13,6 +14,7 @@ class Blog {
     init() {
         if (this.isValid()) {
             this.render();
+            
         }
     }
     
@@ -32,9 +34,7 @@ class Blog {
 
     render() {
         let HTML = '';
-        // const btn = document.querySelector('play-blue');
-
-        // btn.addEventListener('click', () => {});
+        
 
         for (let i=0; i<data.length; i++) {
             const post = data[i];
@@ -43,8 +43,8 @@ class Blog {
             if (post.media.images)    {
             HTML += `<div class="post col-4">
                             <img class="postmedia" src="../img/blog/${post.media.images}" alt="Post media">
-                            <a class="title">${post.title}</a>
-                            <a class="category">${post.category}</a>
+                            <a href="#" class="title">${post.title}</a>
+                            <a href="#" class="category">${post.category}</a>
                             <p class="date">${post.date} <a class="author">${post.author}</a></p>
                             <p class="description">${post.description}</p>
                             <p class="read-more">${post.readmore}</p> 
@@ -53,14 +53,28 @@ class Blog {
             if (post.media.video)    {
             HTML += `<div class="post col-4">
                             
-                            <div class="video"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
-                            <a class="title">${post.title}</a>
-                            <a class="category">${post.category}</a>
-                            <p class="date">${post.date} <a class="author">${post.author}</a></p>
-                            <p class="description">${post.description}</p>
-                            <p class="read-more">${post.readmore}</p>
-                        </div>`;
+                            <div class="video">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                            <div id="myModal" class="modal">
+                               <div class="modal-content">
+                               <span class="close">&times;</span>
+                               <iframe src="https://player.vimeo.com/video/99025203?title=0&byline=0&portrait=0&badge=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                               </div>
+                          </div>
+                      
+                      </div>
+                          
+                          <a href="#" class="title">${post.title}</a>
+                          <a href="#" class="category">${post.category}</a>
+                          <p class="date">${post.date} <a class="author">${post.author}</a></p>
+                          <p class="description">${post.description}</p>
+                          <p class="read-more">${post.readmore}</p>
+                      </div>`;
+                              
+                               
                                 
+                                
+                          
                             
                             
             }
@@ -68,9 +82,37 @@ class Blog {
     }
 
         
-        return this.DOM.innerHTML = HTML;
+          
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
         
+        
+        this.DOM.innerHTML = HTML;
+        const modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+        this.DOMplay = this.DOM.querySelector('.fa-play-circle');
+       
+        this.DOMplay.addEventListener('click', () => {
+            modal.style.display = "block";
+
+            span.onclick = function() {
+                modal.style.display = "none";
+              }
+
+              window.onclick = function(event) {
+                if (event.target == modal) {
+                  modal.style.display = "none";
+                }
+              }
+            
+        })
     }
+
+
+
 
 }
                         
