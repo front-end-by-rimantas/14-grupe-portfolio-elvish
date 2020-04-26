@@ -79,17 +79,21 @@
         display: inline-block;
         width:20px;
         margin-left: 6px;
-        
     }
-        .wheel::before,
-        .wheel::after{
-            display: inline-block;
-            content: '';
-            width: 7px;
-            height: 1px;
-            background-color: white;
-            transform: translate(-70%, -70%) rotate(45deg);
-        }
+    .mouse > .mouse-link{
+      height: 100%;
+      width:100%;
+      background-color: blue;
+    }
+      .wheel::before,
+      .wheel::after{
+          display: inline-block;
+          content: '';
+          width: 7px;
+          height: 1px;
+          background-color: white;
+          transform: translate(-70%, -70%) rotate(45deg);
+      }
         .wheel::after{
             transform: translate(-100%, -100%) rotate(-45deg);
         }
