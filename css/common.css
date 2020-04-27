@@ -1,7 +1,22 @@
 .bg-main {
     background-color: var(--dark-color);
     color: var(--dark-color-anti);
-}
+   }
+   .bg-light {
+       background-color: var(--light-color);
+   }
+   
+   
+    .section-heading {
+       display: inline-block;
+       margin-bottom: 30px;
+       font-size: 36px;
+       line-height: 36px;
+       text-align: center;
+       position: relative;
+       font-weight: 400;
+   }
+
 .bg-light {
     background-color: var(--light-color);
 }
@@ -34,7 +49,7 @@ h2 {
             width: 30px;
             height: 1px;
     }
-    .main-title-border:after {
+     .main-title-border:after {
             display: inline-block;
             margin-top: -7px;
             vertical-align: middle;
@@ -42,14 +57,18 @@ h2 {
             background-color: #d0d0d0;
             width: 30px;
             height: 1px;
-    }
+    } 
 
-        .main-title-border i {
-            font-size: 20px;
-            margin-top: 0;
-            margin-left: 5px;
-            font-weight: lighter;
-        }
+
+            .main-title-border i.fa.fa-asterisk {
+                display: inline-block;
+                font-size: 20px;
+                margin-top: -28px;
+                margin-bottom: 10px;
+                font-weight: lighter;
+            }
+
+ 
 p{
     display: inline-block;
     width: 100%;

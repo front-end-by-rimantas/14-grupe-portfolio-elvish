@@ -1,0 +1,219 @@
+.post {
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+.postmedia {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 5px; 
+    
+}
+
+.title {
+    display: inline-block;
+    width: 100%;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #111;
+}
+
+.category {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    color: #111;
+   
+}
+
+.date {
+    display: inline;
+    width: 50%;
+    font-size: 18px;
+    
+}
+
+.author {
+    display: inline;
+    width: 50%;
+    font-size: 18px;
+    color: #111;
+} 
+
+.description {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.read-more {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #888;
+}
+
+.video {
+    display: inline-block;
+    width: 100%;
+    height: 219px;
+   background-image: url(../img/blog/blog-2.jpg);
+   background-position: center center;
+   background-size: cover;
+   border-radius: 5px;
+    overflow: hidden;
+}
+
+/* .play {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: absolute; 
+    top: 25%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 50%;
+
+} */
+/* 
+.play-blue {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    position: absolute;
+    top: 20.5%;
+    left: 46%;
+    z-index: 1;
+    border-style: solid;
+    
+    border-width: 20px 0px 20px 30px;
+    border-color: #fff #fff #fff blue;
+    background: #fff;
+    /* border-radius: 50%; */
+    
+       
+.fa-play-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 70px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    /* background-color: #fefefe; */
+    width: 400px;
+    height: 400px;
+    margin: 15% auto; /* 15% from the top and centered */
+    /* padding: 20px; */
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -30px;
+    margin-right: 210px;
+    color: #111;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .mySlides > img {
+      border-radius: 5px;
+      margin-bottom: -30px;
+  }
+
+   
+
+
+
+
