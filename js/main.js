@@ -1,5 +1,5 @@
 "use strict";
-
+import Services from './components/Services.js';
 import Header from './components/Header.js';
 import Hero from './components/Hero.js';
 import aboutData from './data/AboutMe-data.js';
@@ -48,6 +48,10 @@ new Portfolio ('#portfolio > .row:nth-child(3) > .col-12');
 new Clients ('#clients > .row:nth-child(3) > .col-12');
 new Blog ('#blog .row:nth-child(3)');
 
+
+// -----------Our Services-----------
+new Services ('.ServTabl');
+
 //back-to-top component
 window.addEventListener("scroll", ()=>{    
     if (window.scrollY > 80) {
@@ -56,3 +60,4 @@ window.addEventListener("scroll", ()=>{
         document.querySelector('.back-to-top').classList.add('top');
     }
 });
+
