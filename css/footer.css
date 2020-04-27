@@ -32,6 +32,7 @@ footer.container {
     text-align: center;
     margin-left: 10px;
     transition: transform 0.5s;
+    
 }
 
 .icon:hover {
